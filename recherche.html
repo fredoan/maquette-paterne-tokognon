@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Recherche & Publications – Dr. Judicael Paterne R. TOKOGNON</title>
+<meta name="description" content="Publications scientifiques internationales de Dr. Judicael Paterne R. TOKOGNON – IEEE, journals académiques."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
+  --gold:#C9A84C;--gold-light:#E2C97E;--ivory:#F5F0E8;--slate:#8A9BB0;--white:#fff;
+  --line:rgba(255,255,255,.07);--radius:8px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);overflow-x:hidden}
+.lang-en{display:none}
+[data-lang="en"] .lang-fr{display:none}
+[data-lang="en"] .lang-en{display:inline}
+
+/* ── NAVBAR ── */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,17,31,.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(201,168,76,.12)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo .initials{display:inline-flex;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy);font-size:13px;font-weight:800;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo span{color:var(--ivory);font-weight:400}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);position:relative;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a.active::after,.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-cta{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:9px 20px;border-radius:3px;text-decoration:none;transition:background .3s,transform .2s}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+.lang-switcher{display:flex;border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden}
+.lang-btn{display:flex;align-items:center;gap:5px;padding:6px 10px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);background:transparent;border:none;cursor:pointer;transition:background .2s,color .2s}
+.lang-btn:first-child{border-right:1px solid rgba(201,168,76,.2)}
+.lang-btn.active{background:rgba(201,168,76,.15);color:var(--gold)}
+.lang-btn:hover:not(.active){background:rgba(255,255,255,.04);color:var(--ivory)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:26px;height:2px;background:var(--gold);border-radius:2px;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(7,17,31,.98);backdrop-filter:blur(16px);padding:20px 5% 28px;z-index:99;border-top:1px solid rgba(201,168,76,.15);flex-direction:column}
+.mobile-menu.open{display:flex}
+.mobile-menu a{text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:color .3s}
+.mobile-menu a:hover{color:var(--gold)}
+.m-lang{display:flex;gap:10px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.m-lang-btn{display:flex;align-items:center;gap:6px;padding:7px 14px;font-size:11px;font-weight:700;color:var(--slate);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:4px;cursor:pointer;transition:all .2s}
+.m-lang-btn.active{color:var(--gold);background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3)}
+
+/* ── BANNER ── */
+.page-banner{padding-top:72px;background:var(--navy-mid);border-bottom:1px solid rgba(201,168,76,.1)}
+.banner-inner{max-width:1200px;margin:0 auto;padding:60px 5% 50px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.page-number{font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(201,168,76,.5);margin-bottom:8px}
+.page-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--white);line-height:1.05}
+.page-title .gold{color:var(--gold);font-style:italic}
+.page-desc{font-size:15px;color:var(--slate);line-height:1.7;max-width:520px;margin-top:14px}
+.banner-breadcrumb{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.breadcrumb-link{color:var(--gold);text-decoration:none}
+.breadcrumb-sep,.breadcrumb-current{color:var(--slate)}
+
+/* ── COMMONS ── */
+.section-inner{max-width:1200px;margin:0 auto;padding:90px 5%}
+.section-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.section-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,44px);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:14px}
+.gold-text{color:var(--gold);font-style:italic}
+.section-subtitle{font-size:15px;color:var(--slate);line-height:1.75;max-width:600px;margin-bottom:56px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.22s}
+.reveal-delay-3{transition-delay:.32s}.reveal-delay-4{transition-delay:.42s}
+.thread-sep{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.08) 20%,rgba(201,168,76,.35) 50%,rgba(201,168,76,.08) 80%,transparent 100%);position:relative}
+.thread-sep::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 12px rgba(201,168,76,.5)}
+
+/* ── STATS BANNER ── */
+#research-stats{
+  background:linear-gradient(135deg,var(--navy-light),var(--navy-mid));
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:52px 5%;position:relative;
+}
+#research-stats::before{
+  content:'';position:absolute;top:0;left:5%;right:5%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.stats-row{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.stat-item{text-align:center;padding:12px 8px;border-right:1px solid var(--line)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);line-height:1;margin-bottom:6px}
+.stat-label{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);line-height:1.45}
+
+/* ── DOMAINES ── */
+#domains{background:var(--navy-mid)}
+.domains-intro{
+  display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;
+}
+.domain-chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.domain-chip{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:13px;font-weight:600;padding:12px 22px;
+  border-radius:3px;border:1px solid rgba(201,168,76,.25);
+  color:var(--gold-light);background:rgba(201,168,76,.07);
+  transition:background .3s,border-color .3s,transform .2s;cursor:default;
+}
+.domain-chip:hover{background:rgba(201,168,76,.14);border-color:var(--gold);transform:translateY(-2px)}
+.domain-chip span{font-size:16px}
+.research-visual{
+  background:var(--navy-card);border:1px solid rgba(201,168,76,.15);
+  border-radius:var(--radius);padding:36px;
+  display:flex;flex-direction:column;gap:16px;
+}
+.rv-title{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.rv-bar-item{display:flex;flex-direction:column;gap:6px}
+.rv-bar-label{font-size:12px;color:var(--slate);display:flex;justify-content:space-between}
+.rv-bar-label span:last-child{color:var(--gold-light);font-weight:600}
+.rv-bar-track{height:4px;background:rgba(255,255,255,.06);border-radius:2px;overflow:hidden}
+.rv-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--gold),var(--gold-light));transform:scaleX(0);transform-origin:left;transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.rv-bar-fill.animated{transform:scaleX(1)}
+
+/* ── PUBLICATIONS ── */
+#publications{background:var(--navy)}
+.pub-list{display:flex;flex-direction:column;gap:24px}
+
+.pub-card{
+  background:var(--navy-card);border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);overflow:hidden;
+  transition:border-color .3s,box-shadow .3s,transform .3s;
+  display:grid;grid-template-columns:80px 1fr;
+}
+.pub-card:hover{border-color:rgba(201,168,76,.3);box-shadow:0 12px 48px rgba(0,0,0,.35);transform:translateX(5px)}
+
+.pub-index{
+  background:linear-gradient(180deg,var(--gold),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  flex-direction:column;gap:4px;
+}
+.pub-num{
+  font-family:'Playfair Display',serif;font-size:32px;font-weight:900;
+  color:var(--navy);line-height:1;
+}
+.pub-year-tag{font-size:10px;font-weight:700;color:var(--navy);opacity:.7;letter-spacing:.08em}
+
+.pub-content{padding:28px 32px}
+.pub-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.pub-badge{
+  font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:4px 10px;border-radius:2px;
+}
+.badge-ieee{background:rgba(0,120,212,.15);color:#64B5F6;border:1px solid rgba(0,120,212,.25)}
+.badge-ei{background:rgba(46,125,50,.12);color:#81C784;border:1px solid rgba(46,125,50,.25)}
+.badge-journal{background:rgba(156,39,176,.12);color:#CE93D8;border:1px solid rgba(156,39,176,.25)}
+.badge-conf{background:rgba(230,81,0,.12);color:#FFAB76;border:1px solid rgba(230,81,0,.2)}
+.badge-first{background:rgba(201,168,76,.12);color:var(--gold);border:1px solid rgba(201,168,76,.2)}
+
+.pub-title{
+  font-family:'Playfair Display',serif;font-size:17px;font-weight:700;
+  color:var(--white);line-height:1.4;margin-bottom:10px;
+}
+.pub-venue{
+  font-size:13px;color:var(--slate);line-height:1.7;margin-bottom:16px;
+  font-style:italic;
+}
+.pub-venue strong{color:var(--gold-light);font-style:normal;font-weight:600}
+.pub-meta-row{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+.pub-meta-item{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--slate)}
+.pub-meta-item span:first-child{color:var(--gold)}
+.pub-abstract{
+  font-size:13px;color:rgba(138,155,176,.75);line-height:1.75;
+  margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.05);
+  max-height:0;overflow:hidden;transition:max-height .5s ease,opacity .4s;opacity:0;
+}
+.pub-card.expanded .pub-abstract{max-height:200px;opacity:1}
+.pub-toggle{
+  display:inline-flex;align-items:center;gap:6px;margin-top:14px;
+  font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--gold);background:none;border:none;cursor:pointer;
+  padding:0;transition:opacity .2s;
+}
+.pub-toggle:hover{opacity:.7}
+.toggle-arrow{transition:transform .3s}
+.pub-card.expanded .toggle-arrow{transform:rotate(180deg)}
+
+/* ── METHODOLOGY ── */
+#methodology{background:var(--navy-mid)}
+.meth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.meth-card{
+  background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.12);
+  border-radius:var(--radius);padding:28px 24px;text-align:center;
+  transition:background .3s,transform .2s;
+}
+.meth-card:hover{background:rgba(201,168,76,.09);transform:translateY(-4px)}
+.meth-icon{font-size:32px;display:block;margin-bottom:14px}
+.meth-title{font-size:14px;font-weight:600;color:var(--white);margin-bottom:8px}
+.meth-desc{font-size:13px;color:var(--slate);line-height:1.65}
+
+/* ── PAGE NAV ── */
+.page-nav{background:var(--navy-mid);border-top:1px solid rgba(201,168,76,.1)}
+.page-nav-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr}
+.page-nav-btn{display:flex;align-items:center;gap:16px;padding:30px 5%;text-decoration:none;transition:background .25s}
+.page-nav-btn:hover{background:rgba(201,168,76,.05)}
+.page-nav-btn.next{justify-content:flex-end;text-align:right;border-left:1px solid rgba(255,255,255,.05)}
+.pnb-dir{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.pnb-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white)}
+.pnb-arrow{font-size:22px;color:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168,76,.1)}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.04)}
+.footer-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none}
+.footer-copy{font-size:12px;color:var(--slate)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);text-decoration:none;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:20px;max-width:1200px;margin:0 auto}
+.footer-credit{font-size:11px;color:var(--slate)}
+.footer-credit strong{color:var(--gold);font-weight:600}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){.meth-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){
+  .domains-intro{grid-template-columns:1fr}
+  .pub-card{grid-template-columns:60px 1fr}
+  .pub-num{font-size:24px}
+  .pub-content{padding:20px 18px}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .stat-item{border-right:none;border-bottom:1px solid var(--line)}
+  .stat-item:nth-last-child(-n+2){border-bottom:none}
+  .meth-grid{grid-template-columns:1fr}
+  .nav-links,.nav-cta,.lang-switcher{display:none}
+  .hamburger{display:flex}
+  .section-inner{padding:60px 5%}
+  .footer-inner{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .banner-inner{flex-direction:column;gap:14px}
+  .page-nav-inner{grid-template-columns:1fr}
+  .page-nav-btn.next{border-left:none;border-top:1px solid rgba(255,255,255,.05)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a></li>
+    <li><a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a></li>
+    <li><a href="formation.html"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a></li>
+    <li><a href="recherche.html" class="active"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    </div>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-lang">
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+  <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+  <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
+  <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
+  <a href="formation.html"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a>
+  <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
+  <a href="expertise.html">Expertise</a>
+  <a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- BANNER -->
+<div class="page-banner">
+  <div class="banner-inner">
+    <div>
+      <div class="page-number">04 / 08</div>
+      <h1 class="page-title">
+        <span class="lang-fr">Recherche &amp; <span class="gold">Publications</span></span>
+        <span class="lang-en">Research &amp; <span class="gold">Publications</span></span>
+      </h1>
+      <p class="page-desc">
+        <span class="lang-fr">4 publications scientifiques internationales publiées dans des conférences IEEE et des revues académiques de référence, sur l'innovation et le développement des PME au Bénin.</span>
+        <span class="lang-en">4 international scientific publications in IEEE conferences and leading academic journals, on innovation and SME development in Benin.</span>
+      </p>
+    </div>
+    <div class="banner-breadcrumb">
+      <a href="index.html" class="breadcrumb-link">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div id="research-stats">
+  <div class="stats-row">
+    <div class="stat-item reveal">
+      <div class="stat-num">4</div>
+      <div class="stat-label"><span class="lang-fr">Publications internationales</span><span class="lang-en">International publications</span></div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num">2</div>
+      <div class="stat-label"><span class="lang-fr">Conférences IEEE</span><span class="lang-en">IEEE conferences</span></div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num">7<sup style="font-size:.5em">+</sup></div>
+      <div class="stat-label"><span class="lang-fr">Années de recherche doctorale</span><span class="lang-en">Years doctoral research</span></div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num">1<sup style="font-size:.5em">er</sup></div>
+      <div class="stat-label"><span class="lang-fr">Auteur principal sur toutes les publications</span><span class="lang-en">First author on all publications</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- DOMAINES -->
+<section id="domains">
+  <div class="section-inner">
+    <div class="domains-intro">
+      <div>
+        <div class="section-eyebrow reveal">
+          <span class="lang-fr">Axes de recherche</span>
+          <span class="lang-en">Research areas</span>
+        </div>
+        <h2 class="section-title reveal reveal-delay-1">
+          <span class="lang-fr">Des thématiques au service du <span class="gold-text">développement africain</span></span>
+          <span class="lang-en">Research serving <span class="gold-text">African development</span></span>
+        </h2>
+        <p style="font-size:15px;color:var(--slate);line-height:1.8;max-width:440px" class="reveal reveal-delay-2">
+          <span class="lang-fr">Les travaux de Dr. TOKOGNON s'articulent autour d'une conviction centrale : l'innovation et la qualité sont les leviers essentiels de la transformation économique des PME en Afrique subsaharienne.</span>
+          <span class="lang-en">Dr. TOKOGNON's work centers on a core conviction: innovation and quality are the essential levers for the economic transformation of SMEs in sub-Saharan Africa.</span>
+        </p>
+        <div class="domain-chips reveal reveal-delay-3">
+          <div class="domain-chip"><span>💡</span><span class="lang-fr">Innovation des PME</span><span class="lang-en">SME Innovation</span></div>
+          <div class="domain-chip"><span>🏅</span>TQM &amp; <span class="lang-fr">Qualité</span><span class="lang-en">Quality</span></div>
+          <div class="domain-chip"><span>🌱</span><span class="lang-fr">Développement durable</span><span class="lang-en">Sustainability</span></div>
+          <div class="domain-chip"><span>🤝</span><span class="lang-fr">Capital social</span><span class="lang-en">Social capital</span></div>
+          <div class="domain-chip"><span>📈</span><span class="lang-fr">Performance PME</span><span class="lang-en">SME performance</span></div>
+          <div class="domain-chip"><span>🏛️</span><span class="lang-fr">Politiques publiques</span><span class="lang-en">Public policy</span></div>
+        </div>
+      </div>
+
+      <div class="research-visual reveal reveal-delay-2">
+        <div class="rv-title"><span class="lang-fr">Intensité de recherche par domaine</span><span class="lang-en">Research intensity by area</span></div>
+        <div class="rv-bar-item">
+          <div class="rv-bar-label">
+            <span><span class="lang-fr">Innovation des PME</span><span class="lang-en">SME Innovation</span></span>
+            <span>95%</span>
+          </div>
+          <div class="rv-bar-track"><div class="rv-bar-fill" style="width:95%"></div></div>
+        </div>
+        <div class="rv-bar-item">
+          <div class="rv-bar-label">
+            <span>TQM &amp; <span class="lang-fr">Qualité</span><span class="lang-en">Quality</span></span>
+            <span>80%</span>
+          </div>
+          <div class="rv-bar-track"><div class="rv-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="rv-bar-item">
+          <div class="rv-bar-label">
+            <span><span class="lang-fr">Développement durable</span><span class="lang-en">Sustainability</span></span>
+            <span>85%</span>
+          </div>
+          <div class="rv-bar-track"><div class="rv-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="rv-bar-item">
+          <div class="rv-bar-label">
+            <span><span class="lang-fr">Capital social &amp; réseaux</span><span class="lang-en">Social capital</span></span>
+            <span>70%</span>
+          </div>
+          <div class="rv-bar-track"><div class="rv-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="rv-bar-item">
+          <div class="rv-bar-label">
+            <span><span class="lang-fr">Performance organisationnelle</span><span class="lang-en">Organizational performance</span></span>
+            <span>75%</span>
+          </div>
+          <div class="rv-bar-track"><div class="rv-bar-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">
+      <span class="lang-fr">Publications scientifiques</span>
+      <span class="lang-en">Scientific publications</span>
+    </div>
+    <h2 class="section-title reveal reveal-delay-1">
+      <span class="lang-fr">4 publications <span class="gold-text">référencées mondialement</span></span>
+      <span class="lang-en">4 <span class="gold-text">globally referenced</span> publications</span>
+    </h2>
+    <p class="section-subtitle reveal reveal-delay-2">
+      <span class="lang-fr">Toutes publiées en tant que Premier Auteur — dans des revues et conférences internationales à comité de lecture.</span>
+      <span class="lang-en">All published as First Author — in international peer-reviewed journals and conferences.</span>
+    </p>
+
+    <div class="pub-list">
+
+      <!-- Publication 1 -->
+      <div class="pub-card reveal" id="pub1">
+        <div class="pub-index">
+          <div class="pub-num">01</div>
+          <div class="pub-year-tag">2018</div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="pub-badge badge-ieee">IEEE</span>
+            <span class="pub-badge badge-ei">EI Accepted</span>
+            <span class="pub-badge badge-conf"><span class="lang-fr">Conférence</span><span class="lang-en">Conference</span></span>
+            <span class="pub-badge badge-first"><span class="lang-fr">1er Auteur</span><span class="lang-en">1st Author</span></span>
+          </div>
+          <div class="pub-title">
+            "Innovation Policy for Sustainable Development of SMEs in Benin"
+          </div>
+          <div class="pub-venue">
+            <strong>4th International Conference on Green Technology and Sustainable Development (GTSD)</strong><br/>
+            IEEE, 2018 — pp. 511–517
+          </div>
+          <div class="pub-meta-row">
+            <div class="pub-meta-item"><span>📅</span><span>2018</span></div>
+            <div class="pub-meta-item"><span>📍</span><span>IEEE GTSD Conference</span></div>
+            <div class="pub-meta-item"><span>📄</span><span>pp. 511–517</span></div>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub1')">
+            <span class="lang-fr">Résumé</span><span class="lang-en">Abstract</span>
+            <span class="toggle-arrow">▾</span>
+          </button>
+          <div class="pub-abstract">
+            <span class="lang-fr">Cette étude examine les politiques d'innovation et leur rôle dans le développement durable des PME béninoises. Elle propose un cadre de politique d'innovation adapté au contexte africain, en analysant les obstacles structurels et les leviers institutionnels qui conditionnent la performance des petites et moyennes entreprises au Bénin.</span>
+            <span class="lang-en">This study examines innovation policies and their role in the sustainable development of Beninese SMEs. It proposes an innovation policy framework adapted to the African context, analyzing the structural barriers and institutional levers that condition the performance of small and medium enterprises in Benin.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 2 -->
+      <div class="pub-card reveal reveal-delay-1" id="pub2">
+        <div class="pub-index">
+          <div class="pub-num">02</div>
+          <div class="pub-year-tag">2018</div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="pub-badge badge-ieee">IEEE</span>
+            <span class="pub-badge badge-ei">EI Accepted</span>
+            <span class="pub-badge badge-conf"><span class="lang-fr">Conférence</span><span class="lang-en">Conference</span></span>
+            <span class="pub-badge badge-first"><span class="lang-fr">1er Auteur</span><span class="lang-en">1st Author</span></span>
+          </div>
+          <div class="pub-title">
+            "Impact of Social Ties and Institutional Support System on the Performance of SMEs: An Empirical Study from Benin"
+          </div>
+          <div class="pub-venue">
+            <strong>3rd Technology Innovation Management and Engineering Science — International Conference (TIMES-iCON 2018)</strong><br/>
+            IEEE, 2018 — pp. 1–4
+          </div>
+          <div class="pub-meta-row">
+            <div class="pub-meta-item"><span>📅</span><span>2018</span></div>
+            <div class="pub-meta-item"><span>📍</span><span>TIMES-iCON · IEEE</span></div>
+            <div class="pub-meta-item"><span>📄</span><span>pp. 1–4</span></div>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub2')">
+            <span class="lang-fr">Résumé</span><span class="lang-en">Abstract</span>
+            <span class="toggle-arrow">▾</span>
+          </button>
+          <div class="pub-abstract">
+            <span class="lang-fr">Cette étude empirique analyse l'impact des liens sociaux et du système de soutien institutionnel sur la performance des PME béninoises. Les résultats révèlent le rôle déterminant du capital social et des réseaux institutionnels dans la croissance et la résilience des entreprises en contexte africain.</span>
+            <span class="lang-en">This empirical study analyzes the impact of social ties and institutional support systems on the performance of Beninese SMEs. Results reveal the determining role of social capital and institutional networks in enterprise growth and resilience in the African context.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 3 -->
+      <div class="pub-card reveal reveal-delay-2" id="pub3">
+        <div class="pub-index">
+          <div class="pub-num">03</div>
+          <div class="pub-year-tag">2015</div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="pub-badge badge-journal"><span class="lang-fr">Revue scientifique</span><span class="lang-en">Academic journal</span></span>
+            <span class="pub-badge badge-first"><span class="lang-fr">1er Auteur</span><span class="lang-en">1st Author</span></span>
+          </div>
+          <div class="pub-title">
+            "Building Sustainable Small and Micro Enterprises in Benin: Is Innovation Policy the Way Forward?"
+          </div>
+          <div class="pub-venue">
+            <strong>International Journal of Economics, Commerce and Management</strong><br/>
+            2015, Vol. 3 (6): 654–663
+          </div>
+          <div class="pub-meta-row">
+            <div class="pub-meta-item"><span>📅</span><span>2015</span></div>
+            <div class="pub-meta-item"><span>📍</span><span>IJECM · Vol. 3 (6)</span></div>
+            <div class="pub-meta-item"><span>📄</span><span>pp. 654–663</span></div>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub3')">
+            <span class="lang-fr">Résumé</span><span class="lang-en">Abstract</span>
+            <span class="toggle-arrow">▾</span>
+          </button>
+          <div class="pub-abstract">
+            <span class="lang-fr">Cette publication interroge le rôle des politiques d'innovation dans la construction d'entreprises micro et petites durables au Bénin. L'article propose une analyse comparative des politiques existantes et formule des recommandations concrètes pour les décideurs béninois souhaitant stimuler l'entrepreneuriat durable.</span>
+            <span class="lang-en">This publication questions the role of innovation policies in building sustainable micro and small enterprises in Benin. The article offers a comparative analysis of existing policies and formulates concrete recommendations for Beninese decision-makers seeking to stimulate sustainable entrepreneurship.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publication 4 -->
+      <div class="pub-card reveal reveal-delay-3" id="pub4">
+        <div class="pub-index">
+          <div class="pub-num">04</div>
+          <div class="pub-year-tag">2014</div>
+        </div>
+        <div class="pub-content">
+          <div class="pub-badges">
+            <span class="pub-badge badge-conf"><span class="lang-fr">Conférence</span><span class="lang-en">Conference</span></span>
+            <span class="pub-badge badge-first"><span class="lang-fr">1er Auteur</span><span class="lang-en">1st Author</span></span>
+          </div>
+          <div class="pub-title">
+            "Service Innovation and TQM: A Conceptual Framework of Customer Satisfaction"
+          </div>
+          <div class="pub-venue">
+            <strong>MSMI 2014 Conference Proceeding</strong><br/>
+            2014 — pp. 167–171
+          </div>
+          <div class="pub-meta-row">
+            <div class="pub-meta-item"><span>📅</span><span>2014</span></div>
+            <div class="pub-meta-item"><span>📍</span><span>MSMI Conference</span></div>
+            <div class="pub-meta-item"><span>📄</span><span>pp. 167–171</span></div>
+          </div>
+          <button class="pub-toggle" onclick="toggleAbstract('pub4')">
+            <span class="lang-fr">Résumé</span><span class="lang-en">Abstract</span>
+            <span class="toggle-arrow">▾</span>
+          </button>
+          <div class="pub-abstract">
+            <span class="lang-fr">Ce travail propose un cadre conceptuel reliant l'innovation de services et le Management de la Qualité Totale (TQM) à la satisfaction client. Il établit les fondements théoriques d'un modèle intégré permettant aux organisations d'améliorer simultanément leur performance qualité et leur attractivité client.</span>
+            <span class="lang-en">This work proposes a conceptual framework linking service innovation and Total Quality Management (TQM) to customer satisfaction. It establishes the theoretical foundations of an integrated model enabling organizations to simultaneously improve quality performance and customer attractiveness.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- MÉTHODOLOGIE -->
+<section id="methodology">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">
+      <span class="lang-fr">Approche méthodologique</span>
+      <span class="lang-en">Methodological approach</span>
+    </div>
+    <h2 class="section-title reveal reveal-delay-1">
+      <span class="lang-fr">Une recherche <span class="gold-text">rigoureuse et appliquée</span></span>
+      <span class="lang-en">Rigorous and <span class="gold-text">applied research</span></span>
+    </h2>
+    <div class="meth-grid" style="margin-top:44px">
+      <div class="meth-card reveal">
+        <span class="meth-icon">📊</span>
+        <div class="meth-title"><span class="lang-fr">Études empiriques</span><span class="lang-en">Empirical studies</span></div>
+        <div class="meth-desc"><span class="lang-fr">Collecte de données terrain au Bénin, modélisation statistique via Smart PLS et analyse quantitative avancée.</span><span class="lang-en">Field data collection in Benin, statistical modeling via Smart PLS and advanced quantitative analysis.</span></div>
+      </div>
+      <div class="meth-card reveal reveal-delay-1">
+        <span class="meth-icon">🔍</span>
+        <div class="meth-title"><span class="lang-fr">Revue de littérature</span><span class="lang-en">Literature review</span></div>
+        <div class="meth-desc"><span class="lang-fr">Analyse approfondie des théories existantes de l'innovation, du management de la qualité et de l'entrepreneuriat durable.</span><span class="lang-en">In-depth analysis of existing theories on innovation, quality management and sustainable entrepreneurship.</span></div>
+      </div>
+      <div class="meth-card reveal reveal-delay-2">
+        <span class="meth-icon">🏗️</span>
+        <div class="meth-title"><span class="lang-fr">Cadres conceptuels</span><span class="lang-en">Conceptual frameworks</span></div>
+        <div class="meth-desc"><span class="lang-fr">Développement de modèles théoriques originaux applicables aux contextes économiques d'Afrique subsaharienne.</span><span class="lang-en">Development of original theoretical models applicable to sub-Saharan African economic contexts.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- PAGE NAV -->
+<nav class="page-nav">
+  <div class="page-nav-inner">
+    <a href="formation.html" class="page-nav-btn">
+      <span class="pnb-arrow">←</span>
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Page précédente</span><span class="lang-en">Previous page</span></div>
+        <div class="pnb-title"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></div>
+      </div>
+    </a>
+    <a href="expertise.html" class="page-nav-btn next">
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Page suivante</span><span class="lang-en">Next page</span></div>
+        <div class="pnb-title">Expertise</div>
+      </div>
+      <span class="pnb-arrow">→</span>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
+    <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
+    <nav class="footer-links">
+      <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
+      <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
+      <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy" style="font-size:11px">
+      <span class="lang-fr">Directeur Général Adjoint — Compagnie Béninoise des Textiles · Lokossa, Bénin</span>
+      <span class="lang-en">Deputy General Manager — Compagnie Béninoise des Textiles · Lokossa, Benin</span>
+    </p>
+    <p class="footer-credit"><span class="lang-fr">Conçu par</span><span class="lang-en">Designed by</span> <strong>NOVASAVOIR</strong> — Amoussou Frédy</p>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang',lang);
+  localStorage.setItem('toko_lang',lang);
+  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
+  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+}
+(function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
+
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+
+function toggleAbstract(id){
+  const card=document.getElementById(id);
+  card.classList.toggle('expanded');
+}
+
+// Barres animées
+const barObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.rv-bar-fill').forEach(b=>b.classList.add('animated'));
+      barObs.unobserve(e.target);
+    }
+  });
+},{threshold:.3});
+const visual=document.querySelector('.research-visual');
+if(visual)barObs.observe(visual);
+
+// Reveal
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
