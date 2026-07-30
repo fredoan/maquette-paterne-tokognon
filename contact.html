@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact – Dr. Judicael Paterne R. TOKOGNON</title>
+<meta name="description" content="Contacter Dr. Judicael Paterne R. TOKOGNON – DGA CBT, Professeur, Chercheur."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
+  --gold:#C9A84C;--gold-light:#E2C97E;
+  --ivory:#F5F0E8;--slate:#8A9BB0;--white:#fff;
+  --line:rgba(255,255,255,.07);--radius:8px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);overflow-x:hidden}
+.lang-en{display:none}
+[data-lang="en"] .lang-fr{display:none}
+[data-lang="en"] .lang-en{display:inline}
+
+/* ── NAVBAR ── */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 5%;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,17,31,.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(201,168,76,.12)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo .initials{display:inline-flex;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy);font-size:13px;font-weight:800;align-items:center;justify-content:center;flex-shrink:0}
+.nav-logo span{color:var(--ivory);font-weight:400}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);position:relative;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a.active::after,.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:14px}
+.nav-cta{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:9px 20px;border-radius:3px;text-decoration:none;transition:background .3s,transform .2s}
+.nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+.lang-switcher{display:flex;border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden}
+.lang-btn{display:flex;align-items:center;gap:5px;padding:6px 10px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);background:transparent;border:none;cursor:pointer;transition:background .2s,color .2s}
+.lang-btn:first-child{border-right:1px solid rgba(201,168,76,.2)}
+.lang-btn.active{background:rgba(201,168,76,.15);color:var(--gold)}
+.lang-btn:hover:not(.active){background:rgba(255,255,255,.04);color:var(--ivory)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:26px;height:2px;background:var(--gold);border-radius:2px;transition:transform .3s,opacity .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(7,17,31,.98);backdrop-filter:blur(16px);padding:20px 5% 28px;z-index:99;border-top:1px solid rgba(201,168,76,.15);flex-direction:column}
+.mobile-menu.open{display:flex}
+.mobile-menu a{text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:color .3s}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--gold)}
+.m-lang{display:flex;gap:10px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.m-lang-btn{display:flex;align-items:center;gap:6px;padding:7px 14px;font-size:11px;font-weight:700;color:var(--slate);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:4px;cursor:pointer;transition:all .2s}
+.m-lang-btn.active{color:var(--gold);background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3)}
+
+/* ── BANNER ── */
+.page-banner{padding-top:72px;background:var(--navy-mid);border-bottom:1px solid rgba(201,168,76,.1)}
+.banner-inner{max-width:1200px;margin:0 auto;padding:60px 5% 50px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.page-number{font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(201,168,76,.5);margin-bottom:8px}
+.page-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--white);line-height:1.05}
+.page-title .gold{color:var(--gold);font-style:italic}
+.page-desc{font-size:15px;color:var(--slate);line-height:1.7;max-width:520px;margin-top:14px}
+.banner-breadcrumb{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.breadcrumb-link{color:var(--gold);text-decoration:none}
+.breadcrumb-sep,.breadcrumb-current{color:var(--slate)}
+
+/* ── COMMONS ── */
+.section-inner{max-width:1200px;margin:0 auto;padding:90px 5%}
+.section-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.section-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,44px);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:14px}
+.gold-text{color:var(--gold);font-style:italic}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
+.thread-sep{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.08) 20%,rgba(201,168,76,.35) 50%,rgba(201,168,76,.08) 80%,transparent 100%);position:relative}
+.thread-sep::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 12px rgba(201,168,76,.5)}
+
+/* ── SECTION CONTACT PRINCIPALE ── */
+#contact-main{background:var(--navy-mid)}
+.contact-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:start}
+
+/* Infos gauche */
+.contact-info{}
+.contact-intro{font-size:15px;color:var(--slate);line-height:1.8;margin-bottom:40px}
+.contact-intro strong{color:var(--ivory)}
+
+.contact-items{display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
+.contact-item{
+  display:flex;align-items:flex-start;gap:16px;
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);padding:18px 20px;
+  transition:border-color .3s,transform .2s;
+}
+.contact-item:hover{border-color:rgba(201,168,76,.2);transform:translateX(4px)}
+.ci-icon{
+  width:44px;height:44px;border-radius:50%;
+  background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.ci-label{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.ci-value{font-size:14px;color:var(--ivory);font-weight:500;line-height:1.5}
+.ci-value a{color:var(--ivory);text-decoration:none;transition:color .2s}
+.ci-value a:hover{color:var(--gold)}
+
+/* Social links */
+.social-links{display:flex;gap:12px;flex-wrap:wrap}
+.social-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 20px;
+  border:1px solid rgba(255,255,255,.1);border-radius:4px;
+  font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--slate);text-decoration:none;
+  transition:border-color .3s,color .3s,background .3s,transform .2s;
+}
+.social-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,.06);transform:translateY(-2px)}
+.social-btn .sb-icon{font-size:16px}
+
+/* ── FORMULAIRE ── */
+.contact-form-wrap{
+  background:var(--navy-card);border:1px solid rgba(255,255,255,.07);
+  border-radius:var(--radius);padding:40px 36px;
+  position:relative;overflow:hidden;
+}
+.contact-form-wrap::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-light));
+}
+.form-title{
+  font-family:'Playfair Display',serif;font-size:22px;font-weight:700;
+  color:var(--white);margin-bottom:6px;
+}
+.form-subtitle{font-size:13px;color:var(--slate);margin-bottom:28px;line-height:1.6}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.form-group{margin-bottom:16px;display:flex;flex-direction:column;gap:6px}
+.form-label{
+  font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);
+}
+.form-input,.form-textarea,.form-select{
+  width:100%;padding:13px 16px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:4px;color:var(--ivory);font-family:'Inter',sans-serif;font-size:14px;
+  transition:border-color .25s,background .25s,box-shadow .25s;
+  outline:none;appearance:none;
+}
+.form-input::placeholder,.form-textarea::placeholder{color:rgba(138,155,176,.5)}
+.form-input:focus,.form-textarea:focus,.form-select:focus{
+  border-color:var(--gold);background:rgba(201,168,76,.04);
+  box-shadow:0 0 0 3px rgba(201,168,76,.1);
+}
+.form-textarea{min-height:130px;resize:vertical;line-height:1.7}
+.form-select option{background:var(--navy-card);color:var(--ivory)}
+
+.btn-submit{
+  width:100%;padding:15px 32px;
+  background:var(--gold);color:var(--navy);
+  font-family:'Inter',sans-serif;font-size:13px;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;
+  border:none;border-radius:3px;cursor:pointer;
+  transition:background .3s,transform .2s,box-shadow .3s;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  margin-top:8px;
+}
+.btn-submit:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.35)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+
+/* Message succès */
+.form-success{
+  display:none;text-align:center;padding:40px 20px;
+}
+.form-success.show{display:block}
+.success-icon{font-size:52px;display:block;margin-bottom:16px}
+.success-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--white);margin-bottom:10px}
+.success-text{font-size:14px;color:var(--slate);line-height:1.7}
+
+/* ── DISPONIBILITÉ ── */
+#disponibilite{background:var(--navy)}
+.dispo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dispo-card{
+  background:var(--navy-card);border:1px solid rgba(255,255,255,.06);
+  border-radius:var(--radius);padding:28px 24px;text-align:center;
+  transition:transform .3s,border-color .3s;
+  position:relative;overflow:hidden;
+}
+.dispo-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.dispo-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.2)}
+.dispo-card:hover::after{opacity:1}
+.dispo-icon{font-size:30px;display:block;margin-bottom:14px}
+.dispo-title{font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px}
+.dispo-desc{font-size:13px;color:var(--slate);line-height:1.65}
+.dispo-badge{
+  display:inline-block;margin-top:12px;font-size:10px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;border-radius:2px;
+  background:rgba(46,125,50,.12);color:#81C784;border:1px solid rgba(46,125,50,.3);
+}
+
+/* ── CTA FINAL ── */
+#cta-final{
+  background:linear-gradient(135deg,var(--navy-light),var(--navy-mid));
+  border-top:1px solid rgba(201,168,76,.1);
+  border-bottom:1px solid rgba(201,168,76,.1);
+}
+.cta-inner{max-width:700px;margin:0 auto;padding:80px 5%;text-align:center}
+.cta-title{
+  font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);
+  font-weight:900;color:var(--white);line-height:1.2;margin-bottom:16px;
+}
+.cta-title .gold-text{color:var(--gold);font-style:italic}
+.cta-text{font-size:15px;color:var(--slate);line-height:1.8;margin-bottom:36px}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;padding:14px 32px;
+  background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;text-decoration:none;
+  border-radius:3px;transition:background .3s,transform .2s,box-shadow .3s;
+}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.35)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:10px;padding:14px 32px;
+  border:1px solid rgba(201,168,76,.5);color:var(--gold-light);font-size:12px;
+  font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  text-decoration:none;border-radius:3px;background:transparent;
+  transition:background .3s,border-color .3s;
+}
+.btn-outline:hover{background:rgba(201,168,76,.08);border-color:var(--gold)}
+
+/* ── PAGE NAV ── */
+.page-nav{background:var(--navy-mid);border-top:1px solid rgba(201,168,76,.1)}
+.page-nav-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr}
+.page-nav-btn{display:flex;align-items:center;gap:16px;padding:30px 5%;text-decoration:none;transition:background .25s}
+.page-nav-btn:hover{background:rgba(201,168,76,.05)}
+.page-nav-btn.home{justify-content:flex-end;text-align:right;border-left:1px solid rgba(255,255,255,.05)}
+.pnb-dir{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.pnb-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white)}
+.pnb-arrow{font-size:22px;color:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168,76,.1)}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.04)}
+.footer-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none}
+.footer-copy{font-size:12px;color:var(--slate)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);text-decoration:none;transition:color .3s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:20px;max-width:1200px;margin:0 auto}
+.footer-credit{font-size:11px;color:var(--slate)}
+.footer-credit strong{color:var(--gold);font-weight:600}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .contact-layout{grid-template-columns:1fr;gap:40px}
+  .dispo-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta,.lang-switcher{display:none}
+  .hamburger{display:flex}
+  .section-inner{padding:60px 5%}
+  .form-row{grid-template-columns:1fr}
+  .contact-form-wrap{padding:28px 20px}
+  .dispo-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;text-align:center}
+  .footer-links{justify-content:center}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .banner-inner{flex-direction:column;gap:14px}
+  .page-nav-inner{grid-template-columns:1fr}
+  .page-nav-btn.home{border-left:none;border-top:1px solid rgba(255,255,255,.05)}
+  .cta-actions{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a></li>
+    <li><a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a></li>
+    <li><a href="formation.html"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a></li>
+    <li><a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a></li>
+    <li><a href="expertise.html">Expertise</a></li>
+    <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    </div>
+    <a href="contact.html" class="nav-cta active"><span class="lang-fr">Contact</span><span class="lang-en">Contact</span></a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="m-lang">
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+  </div>
+  <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
+  <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
+  <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
+  <a href="formation.html"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a>
+  <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
+  <a href="expertise.html">Expertise</a>
+  <a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a>
+  <a href="contact.html" class="active">Contact</a>
+</div>
+
+<!-- BANNER -->
+<div class="page-banner">
+  <div class="banner-inner">
+    <div>
+      <div class="page-number">07 / 08</div>
+      <h1 class="page-title">
+        <span class="lang-fr">Entrer en <span class="gold">Contact</span></span>
+        <span class="lang-en">Get in <span class="gold">Touch</span></span>
+      </h1>
+      <p class="page-desc">
+        <span class="lang-fr">Vous avez un projet, une opportunité de collaboration ou une question ? Dr. TOKOGNON est ouvert à tout échange professionnel sérieux.</span>
+        <span class="lang-en">Do you have a project, a collaboration opportunity or a question? Dr. TOKOGNON is open to any serious professional exchange.</span>
+      </p>
+    </div>
+    <div class="banner-breadcrumb">
+      <a href="index.html" class="breadcrumb-link">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span class="breadcrumb-current">Contact</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT PRINCIPAL -->
+<section id="contact-main">
+  <div class="section-inner">
+    <div class="contact-layout">
+
+      <!-- Infos gauche -->
+      <div class="contact-info reveal">
+        <div class="section-eyebrow">
+          <span class="lang-fr">Coordonnées</span><span class="lang-en">Contact details</span>
+        </div>
+        <h2 class="section-title">
+          <span class="lang-fr">Restons en <span class="gold-text">contact</span></span>
+          <span class="lang-en">Let's stay <span class="gold-text">connected</span></span>
+        </h2>
+        <p class="contact-intro">
+          <span class="lang-fr">
+            Dr. TOKOGNON est disponible pour des <strong>collaborations académiques</strong>,
+            des <strong>partenariats industriels</strong>, des <strong>consultations en management</strong>
+            ou toute opportunité en lien avec son domaine d'expertise.
+          </span>
+          <span class="lang-en">
+            Dr. TOKOGNON is available for <strong>academic collaborations</strong>,
+            <strong>industrial partnerships</strong>, <strong>management consulting</strong>
+            or any opportunity related to his field of expertise.
+          </span>
+        </p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label"><span class="lang-fr">Téléphone</span><span class="lang-en">Phone</span></div>
+              <div class="ci-value">
+                <a href="tel:+22967854534">(+229) 67 85 45 34</a><br/>
+                <a href="tel:+8618781960759" style="font-size:12px;color:var(--slate)">(+86) 187 8196 0759</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value"><a href="mailto:paternejr@gmail.com">paternejr@gmail.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">💼</div>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-value">
+                <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank">
+                  dr-judicaël-paterne-r-tokognon
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label"><span class="lang-fr">Localisation</span><span class="lang-en">Location</span></div>
+              <div class="ci-value">
+                C/999 PK14 Sèdégbe<br/>
+                03 BP 0991 · Cotonou, Bénin
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">🏭</div>
+            <div>
+              <div class="ci-label"><span class="lang-fr">Institution</span><span class="lang-en">Institution</span></div>
+              <div class="ci-value">
+                <span class="lang-fr">Compagnie Béninoise des Textiles (CBT)</span>
+                <span class="lang-en">Beninese Textile Company (CBT)</span><br/>
+                <span style="font-size:12px;color:var(--slate)">Lokossa, Bénin</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank" class="social-btn">
+            <span class="sb-icon">💼</span> LinkedIn
+          </a>
+          <a href="mailto:paternejr@gmail.com" class="social-btn">
+            <span class="sb-icon">📧</span> Email
+          </a>
+          <a href="tel:+22967854534" class="social-btn">
+            <span class="sb-icon">📞</span> <span class="lang-fr">Appeler</span><span class="lang-en">Call</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Formulaire droite -->
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <div id="form-container">
+          <div class="form-title">
+            <span class="lang-fr">Envoyer un message</span>
+            <span class="lang-en">Send a message</span>
+          </div>
+          <div class="form-subtitle">
+            <span class="lang-fr">Remplissez ce formulaire et Dr. TOKOGNON vous répondra dans les meilleurs délais.</span>
+            <span class="lang-en">Fill in this form and Dr. TOKOGNON will get back to you as soon as possible.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="f-nom">
+                <span class="lang-fr">Nom complet</span><span class="lang-en">Full name</span>
+              </label>
+              <input class="form-input" id="f-nom" type="text"
+                placeholder="Jean Dupont" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-email">Email</label>
+              <input class="form-input" id="f-email" type="email"
+                placeholder="votre@email.com" required/>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="f-sujet">
+              <span class="lang-fr">Sujet</span><span class="lang-en">Subject</span>
+            </label>
+            <select class="form-select" id="f-sujet">
+              <option value="" disabled selected>
+                <span class="lang-fr">-- Choisissez un sujet --</span>
+                <span class="lang-en">-- Choose a subject --</span>
+              </option>
+              <option value="collaboration">
+                <span class="lang-fr">Collaboration académique</span>
+                <span class="lang-en">Academic collaboration</span>
+              </option>
+              <option value="partenariat">
+                <span class="lang-fr">Partenariat industriel</span>
+                <span class="lang-en">Industrial partnership</span>
+              </option>
+              <option value="consultation">
+                <span class="lang-fr">Consultation en management</span>
+                <span class="lang-en">Management consultation</span>
+              </option>
+              <option value="enseignement">
+                <span class="lang-fr">Enseignement / Formation</span>
+                <span class="lang-en">Teaching / Training</span>
+              </option>
+              <option value="recherche">
+                <span class="lang-fr">Projet de recherche</span>
+                <span class="lang-en">Research project</span>
+              </option>
+              <option value="autre">
+                <span class="lang-fr">Autre</span>
+                <span class="lang-en">Other</span>
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="f-org">
+              <span class="lang-fr">Organisation / Institution</span>
+              <span class="lang-en">Organization / Institution</span>
+              <span style="color:var(--slate);font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;margin-left:6px">
+                (<span class="lang-fr">optionnel</span><span class="lang-en">optional</span>)
+              </span>
+            </label>
+            <input class="form-input" id="f-org" type="text"
+              placeholder="Université, Entreprise..."/>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="f-message">Message</label>
+            <textarea class="form-textarea" id="f-message"
+              placeholder="Décrivez votre demande en détail..." required></textarea>
+          </div>
+
+          <button class="btn-submit" id="btn-submit" onclick="submitForm()">
+            <span id="btn-text">
+              <span class="lang-fr">Envoyer le message →</span>
+              <span class="lang-en">Send message →</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Message succès -->
+        <div class="form-success" id="form-success">
+          <span class="success-icon">✅</span>
+          <div class="success-title">
+            <span class="lang-fr">Message envoyé !</span>
+            <span class="lang-en">Message sent!</span>
+          </div>
+          <p class="success-text">
+            <span class="lang-fr">Merci pour votre message. Dr. TOKOGNON vous répondra dans les meilleurs délais.</span>
+            <span class="lang-en">Thank you for your message. Dr. TOKOGNON will get back to you as soon as possible.</span>
+          </p>
+          <div style="margin-top:24px">
+            <a href="index.html" class="btn-primary" style="display:inline-flex">
+              <span class="lang-fr">← Retour à l'accueil</span>
+              <span class="lang-en">← Back to home</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- DISPONIBILITÉ -->
+<section id="disponibilite">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">
+      <span class="lang-fr">Disponibilités</span><span class="lang-en">Availability</span>
+    </div>
+    <h2 class="section-title reveal reveal-delay-1">
+      <span class="lang-fr">Ouvert à la <span class="gold-text">collaboration</span></span>
+      <span class="lang-en">Open to <span class="gold-text">collaboration</span></span>
+    </h2>
+    <div class="dispo-grid" style="margin-top:40px">
+      <div class="dispo-card reveal">
+        <span class="dispo-icon">🎓</span>
+        <div class="dispo-title"><span class="lang-fr">Collaborations académiques</span><span class="lang-en">Academic collaborations</span></div>
+        <div class="dispo-desc"><span class="lang-fr">Co-publications, participation à des jurys, conférences et programmes de recherche partagés.</span><span class="lang-en">Co-publications, jury participation, conferences and shared research programs.</span></div>
+        <span class="dispo-badge"><span class="lang-fr">Disponible</span><span class="lang-en">Available</span></span>
+      </div>
+      <div class="dispo-card reveal reveal-delay-1">
+        <span class="dispo-icon">🏭</span>
+        <div class="dispo-title"><span class="lang-fr">Partenariats industriels</span><span class="lang-en">Industrial partnerships</span></div>
+        <div class="dispo-desc"><span class="lang-fr">Missions de conseil en management, stratégie d'entreprise, TQM et développement durable.</span><span class="lang-en">Management consulting missions, corporate strategy, TQM and sustainable development.</span></div>
+        <span class="dispo-badge"><span class="lang-fr">Disponible</span><span class="lang-en">Available</span></span>
+      </div>
+      <div class="dispo-card reveal reveal-delay-2">
+        <span class="dispo-icon">🌍</span>
+        <div class="dispo-title"><span class="lang-fr">Partenariats internationaux</span><span class="lang-en">International partnerships</span></div>
+        <div class="dispo-desc"><span class="lang-fr">Facilitation de partenariats Afrique-Chine, négociations commerciales et développement des affaires.</span><span class="lang-en">Africa-China partnership facilitation, commercial negotiations and business development.</span></div>
+        <span class="dispo-badge"><span class="lang-fr">Disponible</span><span class="lang-en">Available</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-inner">
+    <div class="section-eyebrow reveal" style="justify-content:center">
+      <span class="lang-fr">Construisons ensemble</span><span class="lang-en">Let's build together</span>
+    </div>
+    <h2 class="cta-title reveal reveal-delay-1">
+      <span class="lang-fr">Prêt à collaborer avec un <span class="gold-text">expert de référence</span> ?</span>
+      <span class="lang-en">Ready to collaborate with a <span class="gold-text">leading expert</span>?</span>
+    </h2>
+    <p class="cta-text reveal reveal-delay-2">
+      <span class="lang-fr">Que vous soyez une institution académique, une entreprise, un décideur ou un partenaire international — Dr. TOKOGNON est disponible pour contribuer à vos projets avec rigueur et engagement.</span>
+      <span class="lang-en">Whether you are an academic institution, a company, a policy maker or an international partner — Dr. TOKOGNON is available to contribute to your projects with rigor and commitment.</span>
+    </p>
+    <div class="cta-actions reveal reveal-delay-3">
+      <a href="mailto:paternejr@gmail.com" class="btn-primary">
+        <span class="lang-fr">📧 Écrire un email</span>
+        <span class="lang-en">📧 Send an email</span>
+      </a>
+      <a href="tel:+22967854534" class="btn-outline">
+        <span class="lang-fr">📞 (+229) 67 85 45 34</span>
+        <span class="lang-en">📞 (+229) 67 85 45 34</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="thread-sep"></div>
+
+<!-- PAGE NAV -->
+<nav class="page-nav">
+  <div class="page-nav-inner">
+    <a href="galerie.html" class="page-nav-btn">
+      <span class="pnb-arrow">←</span>
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Page précédente</span><span class="lang-en">Previous page</span></div>
+        <div class="pnb-title"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></div>
+      </div>
+    </a>
+    <a href="index.html" class="page-nav-btn home">
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Retour</span><span class="lang-en">Back</span></div>
+        <div class="pnb-title"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></div>
+      </div>
+      <span class="pnb-arrow">🏠</span>
+    </a>
+  </div>
+</nav>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
+    <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
+    <nav class="footer-links">
+      <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
+      <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
+      <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy" style="font-size:11px">
+      <span class="lang-fr">Directeur Général Adjoint — Compagnie Béninoise des Textiles · Lokossa, Bénin</span>
+      <span class="lang-en">Deputy General Manager — Compagnie Béninoise des Textiles · Lokossa, Benin</span>
+    </p>
+    <p class="footer-credit"><span class="lang-fr">Conçu par</span><span class="lang-en">Designed by</span> <strong>NOVASAVOIR</strong> — Amoussou Frédy</p>
+  </div>
+</footer>
+
+<script>
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang',lang);
+  localStorage.setItem('toko_lang',lang);
+  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
+  document.getElementById('btn-en').classList.toggle('active',lang==='en');
+  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
+  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+}
+(function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
+
+const hamburger=document.getElementById('hamburger');
+const mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Formulaire
+function submitForm(){
+  const nom=document.getElementById('f-nom').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const message=document.getElementById('f-message').value.trim();
+  const lang=document.documentElement.getAttribute('data-lang')||'fr';
+  if(!nom||!email||!message){
+    alert(lang==='fr'
+      ?'Veuillez remplir les champs obligatoires (nom, email, message).'
+      :'Please fill in the required fields (name, email, message).');
+    return;
+  }
+  const btn=document.getElementById('btn-submit');
+  btn.disabled=true;
+  btn.innerHTML=lang==='fr'?'Envoi en cours...':'Sending...';
+
+  // Construire le mailto
+  const sujet=document.getElementById('f-sujet').value||'Contact site web';
+  const org=document.getElementById('f-org').value;
+  const body=`Nom: ${nom}\nOrganisation: ${org||'N/A'}\nEmail: ${email}\n\n${message}`;
+  window.location.href=`mailto:paternejr@gmail.com?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(body)}`;
+
+  // Afficher succès après délai
+  setTimeout(()=>{
+    document.getElementById('form-container').style.display='none';
+    document.getElementById('form-success').classList.add('show');
+  },1200);
+}
+
+// Enter dans les champs = pas de soumission accidentelle
+document.querySelectorAll('.form-input,.form-select').forEach(el=>{
+  el.addEventListener('keydown',e=>{if(e.key==='Enter')e.preventDefault()});
+});
+</script>
+</body>
+</html>
