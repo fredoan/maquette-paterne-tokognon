@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page d'accueil -->
+  <url>
+    <loc>https://paternejr-tok.com/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/"/>
+  </url>
+
+  <!-- À Propos -->
+  <url>
+    <loc>https://paternejr-tok.com/apropos.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/apropos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/apropos.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/apropos.html"/>
+  </url>
+
+  <!-- Carrière -->
+  <url>
+    <loc>https://paternejr-tok.com/carriere.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/carriere.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/carriere.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/carriere.html"/>
+  </url>
+
+  <!-- Formation -->
+  <url>
+    <loc>https://paternejr-tok.com/formation.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/formation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/formation.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/formation.html"/>
+  </url>
+
+  <!-- Recherche & Publications -->
+  <url>
+    <loc>https://paternejr-tok.com/recherche.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/recherche.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/recherche.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/recherche.html"/>
+  </url>
+
+  <!-- Expertise -->
+  <url>
+    <loc>https://paternejr-tok.com/expertise.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/expertise.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/expertise.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/expertise.html"/>
+  </url>
+
+  <!-- Galerie -->
+  <url>
+    <loc>https://paternejr-tok.com/galerie.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/galerie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/galerie.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/galerie.html"/>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://paternejr-tok.com/contact.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://paternejr-tok.com/contact.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/contact.html"/>
+  </url>
+
+</urlset>
