@@ -71,30 +71,36 @@
       {
         "@type": "ListItem",
         "position": 2,
+        "name": "Élu consulaire – Chambre de Commerce et d'Industrie du Bénin",
+        "description": "2023–2025 : représentation du secteur privé béninois."
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
         "name": "Professeur du Supérieur",
         "description": "2020–2023 : enseignement en entrepreneuriat, gestion de projets, langue chinoise."
       },
       {
         "@type": "ListItem",
-        "position": 3,
+        "position": 4,
         "name": "Consultant Freelance – GML Sarl",
         "description": "Depuis 2014 : missions commerciales et stratégiques en Chine et au Bénin."
       },
       {
         "@type": "ListItem",
-        "position": 4,
+        "position": 5,
         "name": "Coordonnateur Partenariats – Assou Yannick Co. Ltd",
         "description": "2016–2019 : développement des affaires en Chine."
       },
       {
         "@type": "ListItem",
-        "position": 5,
+        "position": 6,
         "name": "Directeur Général – AGEMA-AFRIQUE",
         "description": "Février–Août 2010 : gestion d'une plateforme de location de voitures haut de gamme."
       },
       {
         "@type": "ListItem",
-        "position": 6,
+        "position": 7,
         "name": "Chef d'Agence / Chef d'escale / Représentant – COTAIR Airlines",
         "description": "2008–2009 : représentation et gestion opérationnelle à l'aéroport de Parakou."
       }
@@ -425,6 +431,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
           <div class="tl-nav-dot"></div>
           <div><div class="tl-nav-year">2023 →</div><div class="tl-nav-label">DGA · CBT</div></div>
         </div>
+        <div class="tl-nav-item" onclick="scrollTo('job-consulaire')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2023 – 2025</div><div class="tl-nav-label"><span class="lang-fr">Élu consulaire</span><span class="lang-en">Consular Rep.</span></div></div>
+        </div>
         <div class="tl-nav-item" onclick="scrollTo('job2')">
           <div class="tl-nav-dot"></div>
           <div><div class="tl-nav-year">2020 – 2023</div><div class="tl-nav-label"><span class="lang-fr">Professeur</span><span class="lang-en">Professor</span></div></div>
@@ -485,8 +495,38 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
           </div>
         </div>
 
+        <!-- Élu consulaire (bloc réintégré) -->
+        <div class="timeline-item reveal reveal-delay-1" id="job-consulaire">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">2023 – 2025 · Mandat consulaire</span>
+            <span class="lang-en">2023 – 2025 · Consular term</span>
+            <span class="period-badge"><span class="lang-fr">Élu</span><span class="lang-en">Elected</span></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Élu consulaire</span>
+              <span class="lang-en">Elected Consular Representative</span>
+            </div>
+            <div class="timeline-org">
+              <span>Chambre de Commerce et d'Industrie du Bénin (CCIB)</span>
+              <span class="org-sep">·</span>
+              <span>Bénin</span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Représentation des intérêts du secteur privé béninois auprès des pouvoirs publics.</span><span class="lang-en">Representation of Beninese private sector interests with public authorities.</span></li>
+              <li><span class="lang-fr">Participation aux commissions de développement économique et industriel.</span><span class="lang-en">Participation in economic and industrial development commissions.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Chambre de Commerce</span><span class="lang-en">Chamber of Commerce</span></span>
+              <span class="tl-tag"><span class="lang-fr">Secteur privé</span><span class="lang-en">Private sector</span></span>
+              <span class="tl-tag"><span class="lang-fr">Représentation</span><span class="lang-en">Representation</span></span>
+            </div>
+          </div>
+        </div>
+
         <!-- 2 – Professeur -->
-        <div class="timeline-item reveal reveal-delay-1" id="job2">
+        <div class="timeline-item reveal reveal-delay-2" id="job2">
           <div class="timeline-dot"></div>
           <div class="timeline-period">
             <span class="lang-fr">2020 – 2023 · Années académiques</span>
@@ -521,7 +561,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         </div>
 
         <!-- 3 – Consultant GML -->
-        <div class="timeline-item reveal reveal-delay-2" id="job3">
+        <div class="timeline-item reveal reveal-delay-3" id="job3">
           <div class="timeline-dot"></div>
           <div class="timeline-period">
             <span class="lang-fr">Depuis Octobre 2014</span>
@@ -766,7 +806,7 @@ document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 function scrollTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'})}
 window.addEventListener('scroll',()=>{
   const items=document.querySelectorAll('.tl-nav-item');
-  const ids=['job1','job2','job3','job4','job5','job6'];
+  const ids=['job1','job-consulaire','job2','job3','job4','job5','job6'];
   let active=0;
   ids.forEach((id,i)=>{
     const el=document.getElementById(id);
