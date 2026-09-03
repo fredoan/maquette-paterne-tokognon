@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Contact – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Contacter Dr. Judicael Paterne R. TOKOGNON – DGA CBT, Professeur, Chercheur."/>
+<!-- SEO -->
+<title>Contact – Dr. Judicael Paterne R. TOKOGNON | Formulaire de Contact</title>
+<meta name="description" content="Contactez Dr. Judicael Paterne R. TOKOGNON, Directeur Général Adjoint de la CBT, Professeur et Chercheur. Téléphone, email, LinkedIn et formulaire de contact."/>
+<link rel="canonical" href="https://paternejr-tok.com/contact.html"/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://paternejr-tok.com/contact.html"/>
+<meta property="og:title" content="Contact – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:description" content="Formulaire de contact et coordonnées de Dr. TOKOGNON."/>
+<meta property="og:image" content="https://paternejr-tok.com/c1.png"/>
+<meta property="og:image:alt" content="Portrait officiel du Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://paternejr-tok.com/contact.html"/>
+<meta name="twitter:title" content="Contact – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta name="twitter:description" content="Contactez Dr. TOKOGNON via le formulaire."/>
+<meta name="twitter:image" content="https://paternejr-tok.com/c1.png"/>
+<!-- Hreflang -->
+<link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/contact.html"/>
+<link rel="alternate" hreflang="en" href="https://paternejr-tok.com/contact.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/contact.html"/>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- Thème -->
+<meta name="theme-color" content="#07111F"/>
+<!-- Préconnexions Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://paternejr-tok.com/contact.html",
+  "name": "Contact – Dr. Judicael Paterne R. TOKOGNON",
+  "inLanguage": "fr-FR",
+  "about": {
+    "@type": "Person",
+    "@id": "https://paternejr-tok.com/#person",
+    "name": "Dr. Judicael Paterne Raoul TOKOGNON",
+    "email": "mailto:paternejr@gmail.com",
+    "telephone": "+2290167854534",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C/999 PK14 Sèdégbe, 03 BP 0991",
+      "addressLocality": "Cotonou",
+      "addressCountry": "BJ"
+    }
+  }
+}
+</script>
 <style>
 :root{
   --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
@@ -35,6 +85,7 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);ov
 .nav-right{display:flex;align-items:center;gap:14px}
 .nav-cta{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:9px 20px;border-radius:3px;text-decoration:none;transition:background .3s,transform .2s}
 .nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
+.nav-cta.active{background:var(--gold-light)}
 .lang-switcher{display:flex;border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden}
 .lang-btn{display:flex;align-items:center;gap:5px;padding:6px 10px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);background:transparent;border:none;cursor:pointer;transition:background .2s,color .2s}
 .lang-btn:first-child{border-right:1px solid rgba(201,168,76,.2)}
@@ -279,7 +330,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigation principale">
   <a href="index.html" class="nav-logo">
     <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
   </a>
@@ -292,19 +343,19 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
     <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    <div class="lang-switcher" role="group" aria-label="Changement de langue">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 EN</button>
     </div>
     <a href="contact.html" class="nav-cta active"><span class="lang-fr">Contact</span><span class="lang-en">Contact</span></a>
   </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <div class="m-lang">
-    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 English</button>
   </div>
   <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
   <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
@@ -331,7 +382,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </p>
     </div>
     <div class="banner-breadcrumb">
-      <a href="index.html" class="breadcrumb-link">Home</a>
+      <a href="index.html" class="breadcrumb-link"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
       <span class="breadcrumb-sep">›</span>
       <span class="breadcrumb-current">Contact</span>
     </div>
@@ -388,7 +439,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
             <div>
               <div class="ci-label">LinkedIn</div>
               <div class="ci-value">
-                <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank">
+                <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank" rel="noopener noreferrer">
                   dr-judicaël-paterne-r-tokognon
                 </a>
               </div>
@@ -418,7 +469,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         </div>
 
         <div class="social-links">
-          <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank" class="social-btn">
+          <a href="https://linkedin.com/in/dr-judicaël-paterne-r-tokognon-830183208" target="_blank" rel="noopener noreferrer" class="social-btn">
             <span class="sb-icon">💼</span> LinkedIn
           </a>
           <a href="mailto:paternejr@gmail.com" class="social-btn">
@@ -442,81 +493,90 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
             <span class="lang-en">Fill in this form and Dr. TOKOGNON will get back to you as soon as possible.</span>
           </div>
 
-          <div class="form-row">
+          <!-- Formulaire FormSubmit -->
+          <form id="contact-form" action="https://formsubmit.co/paternejr@gmail.com" method="POST">
+            <!-- Champs cachés FormSubmit -->
+            <input type="hidden" name="_subject" value="Nouveau message depuis paternejr-tok.com">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="f-nom">
+                  <span class="lang-fr">Nom complet</span><span class="lang-en">Full name</span>
+                </label>
+                <input class="form-input" id="f-nom" name="name" type="text"
+                  placeholder="Jean Dupont" required/>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-email">Email</label>
+                <input class="form-input" id="f-email" name="email" type="email"
+                  placeholder="votre@email.com" required/>
+              </div>
+            </div>
+
             <div class="form-group">
-              <label class="form-label" for="f-nom">
-                <span class="lang-fr">Nom complet</span><span class="lang-en">Full name</span>
+              <label class="form-label" for="f-sujet">
+                <span class="lang-fr">Sujet</span><span class="lang-en">Subject</span>
               </label>
-              <input class="form-input" id="f-nom" type="text"
-                placeholder="Jean Dupont" required/>
+              <select class="form-select" id="f-sujet" name="subject">
+                <option value="" disabled selected>
+                  <span class="lang-fr">-- Choisissez un sujet --</span>
+                  <span class="lang-en">-- Choose a subject --</span>
+                </option>
+                <option value="collaboration">
+                  <span class="lang-fr">Collaboration académique</span>
+                  <span class="lang-en">Academic collaboration</span>
+                </option>
+                <option value="partenariat">
+                  <span class="lang-fr">Partenariat industriel</span>
+                  <span class="lang-en">Industrial partnership</span>
+                </option>
+                <option value="consultation">
+                  <span class="lang-fr">Consultation en management</span>
+                  <span class="lang-en">Management consultation</span>
+                </option>
+                <option value="enseignement">
+                  <span class="lang-fr">Enseignement / Formation</span>
+                  <span class="lang-en">Teaching / Training</span>
+                </option>
+                <option value="recherche">
+                  <span class="lang-fr">Projet de recherche</span>
+                  <span class="lang-en">Research project</span>
+                </option>
+                <option value="autre">
+                  <span class="lang-fr">Autre</span>
+                  <span class="lang-en">Other</span>
+                </option>
+              </select>
             </div>
+
             <div class="form-group">
-              <label class="form-label" for="f-email">Email</label>
-              <input class="form-input" id="f-email" type="email"
-                placeholder="votre@email.com" required/>
+              <label class="form-label" for="f-org">
+                <span class="lang-fr">Organisation / Institution</span>
+                <span class="lang-en">Organization / Institution</span>
+                <span style="color:var(--slate);font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;margin-left:6px">
+                  (<span class="lang-fr">optionnel</span><span class="lang-en">optional</span>)
+                </span>
+              </label>
+              <input class="form-input" id="f-org" name="organization" type="text"
+                placeholder="Université, Entreprise..."/>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label class="form-label" for="f-sujet">
-              <span class="lang-fr">Sujet</span><span class="lang-en">Subject</span>
-            </label>
-            <select class="form-select" id="f-sujet">
-              <option value="" disabled selected>
-                <span class="lang-fr">-- Choisissez un sujet --</span>
-                <span class="lang-en">-- Choose a subject --</span>
-              </option>
-              <option value="collaboration">
-                <span class="lang-fr">Collaboration académique</span>
-                <span class="lang-en">Academic collaboration</span>
-              </option>
-              <option value="partenariat">
-                <span class="lang-fr">Partenariat industriel</span>
-                <span class="lang-en">Industrial partnership</span>
-              </option>
-              <option value="consultation">
-                <span class="lang-fr">Consultation en management</span>
-                <span class="lang-en">Management consultation</span>
-              </option>
-              <option value="enseignement">
-                <span class="lang-fr">Enseignement / Formation</span>
-                <span class="lang-en">Teaching / Training</span>
-              </option>
-              <option value="recherche">
-                <span class="lang-fr">Projet de recherche</span>
-                <span class="lang-en">Research project</span>
-              </option>
-              <option value="autre">
-                <span class="lang-fr">Autre</span>
-                <span class="lang-en">Other</span>
-              </option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="f-message">Message</label>
+              <textarea class="form-textarea" id="f-message" name="message"
+                placeholder="Décrivez votre demande en détail..." required></textarea>
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="f-org">
-              <span class="lang-fr">Organisation / Institution</span>
-              <span class="lang-en">Organization / Institution</span>
-              <span style="color:var(--slate);font-size:9px;font-weight:400;letter-spacing:0;text-transform:none;margin-left:6px">
-                (<span class="lang-fr">optionnel</span><span class="lang-en">optional</span>)
+            <button class="btn-submit" id="btn-submit" type="submit">
+              <span id="btn-text">
+                <span class="lang-fr">Envoyer le message →</span>
+                <span class="lang-en">Send message →</span>
               </span>
-            </label>
-            <input class="form-input" id="f-org" type="text"
-              placeholder="Université, Entreprise..."/>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="f-message">Message</label>
-            <textarea class="form-textarea" id="f-message"
-              placeholder="Décrivez votre demande en détail..." required></textarea>
-          </div>
-
-          <button class="btn-submit" id="btn-submit" onclick="submitForm()">
-            <span id="btn-text">
-              <span class="lang-fr">Envoyer le message →</span>
-              <span class="lang-en">Send message →</span>
-            </span>
-          </button>
+            </button>
+          </form>
         </div>
 
         <!-- Message succès -->
@@ -610,7 +670,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <div class="thread-sep"></div>
 
 <!-- PAGE NAV -->
-<nav class="page-nav">
+<nav class="page-nav" aria-label="Navigation entre pages">
   <div class="page-nav-inner">
     <a href="galerie.html" class="page-nav-btn">
       <span class="pnb-arrow">←</span>
@@ -634,7 +694,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
   <div class="footer-inner">
     <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
     <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Liens de pied de page">
       <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
       <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
       <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
@@ -654,55 +714,83 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 function setLang(lang){
   document.documentElement.setAttribute('data-lang',lang);
   localStorage.setItem('toko_lang',lang);
-  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+  const btnFr=document.getElementById('btn-fr');
+  const btnEn=document.getElementById('btn-en');
+  const mBtnFr=document.getElementById('m-btn-fr');
+  const mBtnEn=document.getElementById('m-btn-en');
+  if(btnFr) btnFr.classList.toggle('active',lang==='fr');
+  if(btnEn) btnEn.classList.toggle('active',lang==='en');
+  if(mBtnFr) mBtnFr.classList.toggle('active',lang==='fr');
+  if(mBtnEn) mBtnEn.classList.toggle('active',lang==='en');
+  if(btnFr) btnFr.setAttribute('aria-pressed', lang==='fr');
+  if(btnEn) btnEn.setAttribute('aria-pressed', lang==='en');
+  if(mBtnFr) mBtnFr.setAttribute('aria-pressed', lang==='fr');
+  if(mBtnEn) mBtnEn.setAttribute('aria-pressed', lang==='en');
 }
 (function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
 
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
-hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
-document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+hamburger.addEventListener('click',()=>{
+  const isOpen = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
+});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+}));
 
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-// Formulaire
-function submitForm(){
-  const nom=document.getElementById('f-nom').value.trim();
-  const email=document.getElementById('f-email').value.trim();
-  const message=document.getElementById('f-message').value.trim();
-  const lang=document.documentElement.getAttribute('data-lang')||'fr';
-  if(!nom||!email||!message){
-    alert(lang==='fr'
-      ?'Veuillez remplir les champs obligatoires (nom, email, message).'
-      :'Please fill in the required fields (name, email, message).');
-    return;
+// Formulaire FormSubmit avec fetch pour rester sur la page
+const form = document.getElementById('contact-form');
+const formContainer = document.getElementById('form-container');
+const successDiv = document.getElementById('form-success');
+const submitBtn = document.getElementById('btn-submit');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const lang = document.documentElement.getAttribute('data-lang') || 'fr';
+  const btnText = document.getElementById('btn-text');
+  const originalText = btnText.innerHTML;
+  
+  // Désactiver le bouton
+  submitBtn.disabled = true;
+  btnText.textContent = lang === 'fr' ? 'Envoi en cours...' : 'Sending...';
+  
+  try {
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    
+    if (response.ok) {
+      // Succès : masquer le formulaire et afficher le succès
+      formContainer.style.display = 'none';
+      successDiv.classList.add('show');
+    } else {
+      throw new Error('FormSubmit error');
+    }
+  } catch (error) {
+    // En cas d'erreur, réactiver le bouton et afficher un message
+    submitBtn.disabled = false;
+    btnText.innerHTML = originalText;
+    alert(lang === 'fr' 
+      ? 'Une erreur est survenue. Veuillez réessayer ou envoyer un email directement à paternejr@gmail.com.'
+      : 'An error occurred. Please try again or send an email directly to paternejr@gmail.com.');
   }
-  const btn=document.getElementById('btn-submit');
-  btn.disabled=true;
-  btn.innerHTML=lang==='fr'?'Envoi en cours...':'Sending...';
-
-  // Construire le mailto
-  const sujet=document.getElementById('f-sujet').value||'Contact site web';
-  const org=document.getElementById('f-org').value;
-  const body=`Nom: ${nom}\nOrganisation: ${org||'N/A'}\nEmail: ${email}\n\n${message}`;
-  window.location.href=`mailto:paternejr@gmail.com?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(body)}`;
-
-  // Afficher succès après délai
-  setTimeout(()=>{
-    document.getElementById('form-container').style.display='none';
-    document.getElementById('form-success').classList.add('show');
-  },1200);
-}
-
-// Enter dans les champs = pas de soumission accidentelle
-document.querySelectorAll('.form-input,.form-select').forEach(el=>{
-  el.addEventListener('keydown',e=>{if(e.key==='Enter')e.preventDefault()});
 });
 </script>
 </body>
