@@ -1,0 +1,11 @@
+# robots.txt — Dr. Judicael Paterne R. TOKOGNON — https://paternejr-tok.com/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Sitemap pour les moteurs de recherche
+Sitemap: https://paternejr-tok.com/sitemap.xml
