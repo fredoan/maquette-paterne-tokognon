@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Formation – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Formation académique et certifications de Dr. Judicael Paterne R. TOKOGNON – PhD, Master UESTC Chine."/>
+<!-- SEO -->
+<title>Formation – Dr. Judicael Paterne R. TOKOGNON | PhD, Master, Certifications</title>
+<meta name="description" content="Formation académique et certifications internationales de Dr. Judicael Paterne R. TOKOGNON : PhD et Master de l'UESTC en Chine, 11 certifications professionnelles (Coursera, Udemy)."/>
+<link rel="canonical" href="https://paternejr-tok.com/formation.html"/>
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://paternejr-tok.com/formation.html"/>
+<meta property="og:title" content="Formation – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:description" content="PhD, Master UESTC Chine, 11 certifications internationales. Découvrez le parcours académique d'excellence."/>
+<meta property="og:image" content="https://paternejr-tok.com/e.jpeg"/>
+<meta property="og:image:alt" content="Portrait du Dr. Judicael Paterne TOKOGNON"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://paternejr-tok.com/formation.html"/>
+<meta name="twitter:title" content="Formation – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta name="twitter:description" content="PhD, Master UESTC Chine, certifications internationales."/>
+<meta name="twitter:image" content="https://paternejr-tok.com/e.jpeg"/>
+<!-- Hreflang -->
+<link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/formation.html"/>
+<link rel="alternate" hreflang="en" href="https://paternejr-tok.com/formation.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/formation.html"/>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- Thème -->
+<meta name="theme-color" content="#07111F"/>
+<!-- Préconnexions Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://paternejr-tok.com/formation.html",
+  "name": "Formation – Dr. Judicael Paterne R. TOKOGNON",
+  "inLanguage": "fr-FR",
+  "about": {
+    "@type": "Person",
+    "@id": "https://paternejr-tok.com/#person",
+    "name": "Dr. Judicael Paterne Raoul TOKOGNON",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Electronic Science and Technology of China (UESTC)",
+      "location": "Chengdu, Sichuan, China"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "PhD in Management Science and Engineering",
+        "awardedBy": "UESTC",
+        "dateCreated": "2019-06"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Master in Management Science and Engineering",
+        "awardedBy": "UESTC",
+        "dateCreated": "2012-06"
+      }
+    ]
+  }
+}
+</script>
 <style>
 :root{
   --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
@@ -151,7 +212,6 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);ov
   color:var(--gold);line-height:1;
 }
 .cert-big-label{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);margin-top:8px}
-.cert-intro-text{}
 .cert-intro-text p{font-size:15px;color:var(--slate);line-height:1.8;margin-bottom:16px}
 .cert-intro-text strong{color:var(--ivory)}
 .cert-platforms{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
@@ -249,7 +309,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigation principale">
   <a href="index.html" class="nav-logo">
     <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
   </a>
@@ -262,19 +322,19 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
     <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    <div class="lang-switcher" role="group" aria-label="Changement de langue">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 EN</button>
     </div>
     <a href="contact.html" class="nav-cta">Contact</a>
   </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <div class="m-lang">
-    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 English</button>
   </div>
   <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
   <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
@@ -301,7 +361,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </p>
     </div>
     <div class="banner-breadcrumb">
-      <a href="index.html" class="breadcrumb-link">Home</a>
+      <a href="index.html" class="breadcrumb-link"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
       <span class="breadcrumb-sep">›</span>
       <span class="breadcrumb-current"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></span>
     </div>
@@ -491,9 +551,9 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 
       <div class="cert-card reveal">
         <span class="cert-icon">🏗️</span>
-        <div class="cert-name">PMP — Project Management Professional: The Basic for Success</div>
+        <div class="cert-name">PMP — Project Management Professional: The Basics for Success</div>
         <div class="cert-source">Udemy</div>
-        <a href="http://www.ude.my/UC-1NKF9J9B" target="_blank" class="cert-link">
+        <a href="http://www.ude.my/UC-1NKF9J9B" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -502,7 +562,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">📋</span>
         <div class="cert-name">Project Management: The Basics for Success</div>
         <div class="cert-source">University of California, Irvine · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/S9XURUPNHGLP" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/S9XURUPNHGLP" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -511,7 +571,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">📊</span>
         <div class="cert-name">Fundamentals of Management</div>
         <div class="cert-source">University of California, Irvine · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/A3ZUEXVEVSM2" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/A3ZUEXVEVSM2" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -520,7 +580,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">💡</span>
         <div class="cert-name">Strategy Planning and Innovation Management</div>
         <div class="cert-source">Udemy</div>
-        <a href="http://www.ude.my/UC-SJ5D61VL" target="_blank" class="cert-link">
+        <a href="http://www.ude.my/UC-SJ5D61VL" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -529,7 +589,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🌐</span>
         <div class="cert-name">Leadership in 21st Century Organizations</div>
         <div class="cert-source">Copenhagen Business School · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/9HS2M3N9G6R7" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/9HS2M3N9G6R7" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -538,7 +598,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🤝</span>
         <div class="cert-name">International Leadership and Organizational Behavior</div>
         <div class="cert-source">Università Bocconi · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/WUGMEGK5SHZM" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/WUGMEGK5SHZM" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -547,7 +607,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🚀</span>
         <div class="cert-name">Developing Innovative Ideas for New Companies — The First Step in Entrepreneurship</div>
         <div class="cert-source">University of Maryland · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/UQWPTE2GUP8H" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/UQWPTE2GUP8H" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -556,7 +616,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🔏</span>
         <div class="cert-name">Successful Negotiation: Essential Strategies and Skills</div>
         <div class="cert-source">University of Michigan · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/DZFRASXYW3N4" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/DZFRASXYW3N4" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -565,7 +625,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🏛️</span>
         <div class="cert-name">Public Policy Challenges of the 21st Century</div>
         <div class="cert-source">University of Virginia · Coursera</div>
-        <a href="https://www.coursera.org/account/accomplishments/certificate/LPLXHT7SSEFV" target="_blank" class="cert-link">
+        <a href="https://www.coursera.org/account/accomplishments/certificate/LPLXHT7SSEFV" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -574,7 +634,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">⏱️</span>
         <div class="cert-name">Effective Time Management</div>
         <div class="cert-source">Udemy</div>
-        <a href="http://www.ude.my/UC-AP8T5D2F" target="_blank" class="cert-link">
+        <a href="http://www.ude.my/UC-AP8T5D2F" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -583,7 +643,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <span class="cert-icon">🧠</span>
         <div class="cert-name">Intuitive Decision Making</div>
         <div class="cert-source">Udemy</div>
-        <a href="http://www.ude.my/UC-JJ44UMWE" target="_blank" class="cert-link">
+        <a href="http://www.ude.my/UC-JJ44UMWE" target="_blank" class="cert-link" rel="noopener noreferrer">
           <span class="lang-fr">Voir le certificat</span><span class="lang-en">View certificate</span>
         </a>
       </div>
@@ -645,7 +705,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <div class="thread-sep"></div>
 
 <!-- PAGE NAV -->
-<nav class="page-nav">
+<nav class="page-nav" aria-label="Navigation entre pages">
   <div class="page-nav-inner">
     <a href="carriere.html" class="page-nav-btn">
       <span class="pnb-arrow">←</span>
@@ -669,7 +729,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
   <div class="footer-inner">
     <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
     <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Liens de pied de page">
       <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
       <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
       <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
@@ -689,17 +749,35 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 function setLang(lang){
   document.documentElement.setAttribute('data-lang',lang);
   localStorage.setItem('toko_lang',lang);
-  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+  const btnFr=document.getElementById('btn-fr');
+  const btnEn=document.getElementById('btn-en');
+  const mBtnFr=document.getElementById('m-btn-fr');
+  const mBtnEn=document.getElementById('m-btn-en');
+  if(btnFr) btnFr.classList.toggle('active',lang==='fr');
+  if(btnEn) btnEn.classList.toggle('active',lang==='en');
+  if(mBtnFr) mBtnFr.classList.toggle('active',lang==='fr');
+  if(mBtnEn) mBtnEn.classList.toggle('active',lang==='en');
+  if(btnFr) btnFr.setAttribute('aria-pressed', lang==='fr');
+  if(btnEn) btnEn.setAttribute('aria-pressed', lang==='en');
+  if(mBtnFr) mBtnFr.setAttribute('aria-pressed', lang==='fr');
+  if(mBtnEn) mBtnEn.setAttribute('aria-pressed', lang==='en');
 }
 (function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
 
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
-hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
-document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+hamburger.addEventListener('click',()=>{
+  const isOpen = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
+});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+}));
 
 const obs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
