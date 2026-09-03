@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>À Propos – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Biographie et profil de Dr. Judicael Paterne R. TOKOGNON – DGA, Professeur, Chercheur."/>
+<!-- SEO -->
+<title>À Propos – Dr. Judicael Paterne R. TOKOGNON | Biographie, Profil, Langues</title>
+<meta name="description" content="Biographie et profil complet de Dr. Judicael Paterne Raoul TOKOGNON, Directeur Général Adjoint de la CBT, Professeur et Chercheur trilingue. Découvrez son parcours, ses compétences et ses centres d'intérêt."/>
+<link rel="canonical" href="https://paternejr-tok.com/apropos.html"/>
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://paternejr-tok.com/apropos.html"/>
+<meta property="og:title" content="À Propos – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:description" content="Biographie, compétences et centres d'intérêt du Dr. TOKOGNON, DGA de la CBT, Professeur et Chercheur."/>
+<meta property="og:image" content="https://paternejr-tok.com/e.jpeg"/>
+<meta property="og:image:alt" content="Portrait du Dr. Judicael Paterne TOKOGNON"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://paternejr-tok.com/apropos.html"/>
+<meta name="twitter:title" content="À Propos – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta name="twitter:description" content="Biographie et profil de Dr. TOKOGNON, DGA, Professeur, Chercheur."/>
+<meta name="twitter:image" content="https://paternejr-tok.com/e.jpeg"/>
+<!-- Hreflang -->
+<link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/apropos.html"/>
+<link rel="alternate" hreflang="en" href="https://paternejr-tok.com/apropos.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/apropos.html"/>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- Thème -->
+<meta name="theme-color" content="#07111F"/>
+<!-- Préconnexions Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://paternejr-tok.com/apropos.html",
+  "name": "À Propos – Dr. Judicael Paterne R. TOKOGNON",
+  "inLanguage": "fr-FR",
+  "about": {
+    "@type": "Person",
+    "@id": "https://paternejr-tok.com/#person",
+    "name": "Dr. Judicael Paterne Raoul TOKOGNON",
+    "givenName": "Judicael Paterne Raoul",
+    "familyName": "TOKOGNON",
+    "honorificPrefix": "Dr.",
+    "jobTitle": ["Directeur Général Adjoint", "Chercheur", "Professeur"],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Compagnie Béninoise des Textiles (CBT)",
+      "location": "Lokossa, Bénin"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "UESTC China"
+    },
+    "image": "https://paternejr-tok.com/e.jpeg",
+    "knowsLanguage": ["fr", "en", "zh"],
+    "email": "mailto:paternejr@gmail.com",
+    "telephone": "+2290167854534"
+  }
+}
+</script>
 <style>
 /* ═══════════════ DESIGN SYSTEM ═══════════════ */
 :root{
@@ -397,7 +456,7 @@ footer{
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigation principale">
   <a href="index.html" class="nav-logo">
     <span class="initials">JPT</span>
     Dr. <span>TOKOGNON</span>
@@ -411,20 +470,20 @@ footer{
     <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')"><span>🇫🇷</span> FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')"><span>🇬🇧</span> EN</button>
+    <div class="lang-switcher" role="group" aria-label="Changement de langue">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')" aria-pressed="true"><span>🇫🇷</span> FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false"><span>🇬🇧</span> EN</button>
     </div>
     <a href="contact.html" class="nav-cta">Contact</a>
   </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <div class="m-lang">
-    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 English</button>
   </div>
   <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
   <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
@@ -451,7 +510,7 @@ footer{
       </p>
     </div>
     <div class="banner-breadcrumb">
-      <a href="index.html" class="breadcrumb-link">Home</a>
+      <a href="index.html" class="breadcrumb-link"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
       <span class="breadcrumb-sep">›</span>
       <span class="breadcrumb-current"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></span>
     </div>
@@ -465,28 +524,41 @@ footer{
 
       <!-- Photos gauche -->
       <div class="about-photos reveal">
-        <!-- Photo principale (grande) -->
+        <!-- Photo principale (grande) : eager loading car au-dessus de la ligne de flottaison sur desktop -->
         <div class="about-photo tall">
-          <img src="e.jpeg" alt="Dr. Judicael Paterne TOKOGNON"
+          <img src="e.jpeg" 
+               alt="Portrait officiel du Dr. Judicael Paterne TOKOGNON en costume, Directeur Général Adjoint de la CBT"
+               width="600" height="800"
+               loading="eager"
+               fetchpriority="high"
+               decoding="async"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
           <div class="photo-placeholder" style="display:none">JPT</div>
         </div>
-        <!-- Petite photo haut droite -->
+        <!-- Petite photo haut droite : lazy loading -->
         <div class="about-photo short">
-          <img src="f.jpeg" alt="Dr. TOKOGNON"
+          <img src="f.jpeg" 
+               alt="Dr. TOKOGNON lors d'une conférence académique"
+               width="400" height="300"
+               loading="lazy"
+               decoding="async"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
           <div class="photo-placeholder" style="display:none;font-size:24px">◆</div>
         </div>
-        <!-- Petite photo bas droite -->
+        <!-- Petite photo bas droite : lazy loading -->
         <div class="about-photo short">
-          <img src="g.jpeg" alt="Dr. TOKOGNON"
+          <img src="g.jpeg" 
+               alt="Dr. TOKOGNON en visite industrielle à la CBT Lokossa"
+               width="400" height="300"
+               loading="lazy"
+               decoding="async"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
           <div class="photo-placeholder" style="display:none;font-size:24px">◆</div>
         </div>
         <!-- Badge doré -->
         <div class="gold-corner-badge">
           <span class="corner-num">PhD</span>
-          <span class="corner-text">UESTC<br/>Chine 2019</span>
+          <span class="corner-text">UESTC<br/><span class="lang-fr">Chine 2019</span><span class="lang-en">China 2019</span></span>
         </div>
       </div>
 
@@ -537,18 +609,16 @@ footer{
         <div class="lang-highlight reveal reveal-delay-3">
           <p>
             <span class="lang-fr">
-              <strong>🌍 Trilingue &amp; Pédagogue :</strong> Dr. TOKOGNON maîtrise couramment
+              <strong>🌍 Trilingue & Pédagogue :</strong> Dr. TOKOGNON maîtrise couramment
               le <strong>français</strong>, l'<strong>anglais</strong> et le <strong>chinois</strong>.
-              Fort de son expérience en Chine , aux Etats-Unies et au Bénin, il a développé une méthode d'apprentissage
-              immersive permettant d'acquérir une conversation opérationnelle en anglais ou en chinois
-              .
+              Fort de son expérience en Chine, aux États-Unis et au Bénin, il a développé une méthode d'apprentissage
+              immersive permettant d'acquérir une conversation opérationnelle en anglais ou en chinois.
             </span>
             <span class="lang-en">
-              <strong>🌍 Trilingual &amp; Educator:</strong> Dr. TOKOGNON is fluent in
+              <strong>🌍 Trilingual & Educator:</strong> Dr. TOKOGNON is fluent in
               <strong>French</strong>, <strong>English</strong> and <strong>Chinese</strong>.
-              Drawing on his experience in China, USA and Benin, he developed an immersive learning
-              method allowing students to achieve conversational level in English or Chinese
-             .
+              Drawing on his experience in China, the USA and Benin, he developed an immersive learning
+              method allowing students to achieve conversational level in English or Chinese.
             </span>
           </p>
           <div class="lang-tags">
@@ -556,7 +626,7 @@ footer{
             <span class="lang-tag">🇬🇧 English <span class="fluency">· courant / fluent</span></span>
             <span class="lang-tag">🇨🇳 中文 <span class="fluency">· courant / fluent</span></span>
             <span class="lang-tag" style="border-color:var(--gold);background:rgba(201,168,76,.12)">
-              🎓 <span class="lang-fr">Enseigne anglais &amp; chinois et les cours de management scientifique</span><span class="lang-en">Teaches English &amp; Chinese</span>
+              🎓 <span class="lang-fr">Enseigne l'anglais, le chinois et les cours de management scientifique</span><span class="lang-en">Teaches English & Chinese</span>
             </span>
           </div>
         </div>
@@ -581,7 +651,7 @@ footer{
           </div>
           <div class="info-item">
             <div class="info-label">Email</div>
-            <div class="info-value">paternejr@gmail.com</div>
+            <div class="info-value"><a href="mailto:paternejr@gmail.com" style="color:var(--ivory);text-decoration:none;">paternejr@gmail.com</a></div>
           </div>
           <div class="info-item">
             <div class="info-label">LinkedIn</div>
@@ -669,7 +739,7 @@ footer{
       <div class="interest-card reveal reveal-delay-1">
         <span class="int-icon">✈️</span>
         <div class="int-title"><span class="lang-fr">Voyages</span><span class="lang-en">Travel</span></div>
-        <p class="int-desc"><span class="lang-fr">Passionné par la découverte de nouvelles cultures, ayant vécu et travaillé en Chine, aux Etats-Unies et en Afrique.</span><span class="lang-en">Passionate about discovering new cultures, having lived and worked in China and Africa.</span></p>
+        <p class="int-desc"><span class="lang-fr">Passionné par la découverte de nouvelles cultures, ayant vécu et travaillé en Chine, aux États-Unis et en Afrique.</span><span class="lang-en">Passionate about discovering new cultures, having lived and worked in China, the USA and Africa.</span></p>
       </div>
       <div class="interest-card reveal reveal-delay-2">
         <span class="int-icon">⚽</span>
@@ -700,8 +770,8 @@ footer{
     </h2>
     <div class="ref-grid" style="margin-top:40px">
       <div class="ref-card reveal">
-        <div class="ref-name">(à ajouter)</div>
-        <div class="ref-role"><span class="lang-fr">Conseil des Investisseurs Privés au Bénin</span><span class="lang-en">Council of Private Investors in Benin</span></div>
+        <div class="ref-name"><span class="lang-fr">Conseil des Investisseurs Privés au Bénin</span><span class="lang-en">Council of Private Investors in Benin</span></div>
+        <div class="ref-role"><span class="lang-fr">Institution de référence</span><span class="lang-en">Reference institution</span></div>
         <div class="ref-contact">
           <div class="ref-line">📧 <a href="mailto:dandjinoudan@yahoo.fr">dandjinoudan@yahoo.fr</a></div>
           <div class="ref-line">📞 +229 01 97 89 20 46</div>
@@ -726,7 +796,7 @@ footer{
   <div class="footer-inner">
     <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
     <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Liens de pied de page">
       <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
       <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
       <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
@@ -746,23 +816,36 @@ footer{
 function setLang(lang){
   document.documentElement.setAttribute('data-lang',lang);
   localStorage.setItem('toko_lang',lang);
-  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+  const btnFr=document.getElementById('btn-fr');
+  const btnEn=document.getElementById('btn-en');
+  const mBtnFr=document.getElementById('m-btn-fr');
+  const mBtnEn=document.getElementById('m-btn-en');
+  if(btnFr) btnFr.classList.toggle('active',lang==='fr');
+  if(btnEn) btnEn.classList.toggle('active',lang==='en');
+  if(mBtnFr) mBtnFr.classList.toggle('active',lang==='fr');
+  if(mBtnEn) mBtnEn.classList.toggle('active',lang==='en');
+  // Mise à jour aria-pressed
+  if(btnFr) btnFr.setAttribute('aria-pressed', lang==='fr');
+  if(btnEn) btnEn.setAttribute('aria-pressed', lang==='en');
+  if(mBtnFr) mBtnFr.setAttribute('aria-pressed', lang==='fr');
+  if(mBtnEn) mBtnEn.setAttribute('aria-pressed', lang==='en');
 }
 (function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
 
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
 hamburger.addEventListener('click',()=>{
-  hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
+  const isOpen = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
 });
 document.querySelectorAll('.mobile-menu a').forEach(a=>{
   a.addEventListener('click',()=>{
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
   });
 });
 
