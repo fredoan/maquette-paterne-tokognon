@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Expertise – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Expertise et compétences de Dr. Judicael Paterne R. TOKOGNON – Management, Innovation, TQM, Gestion de projets."/>
+<!-- SEO -->
+<title>Expertise – Dr. Judicael Paterne R. TOKOGNON | Management, Innovation, TQM</title>
+<meta name="description" content="Découvrez les domaines d'expertise de Dr. Judicael Paterne R. TOKOGNON : management stratégique, innovation des PME, TQM, gestion de projets, développement durable et partenariats internationaux."/>
+<link rel="canonical" href="https://paternejr-tok.com/expertise.html"/>
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://paternejr-tok.com/expertise.html"/>
+<meta property="og:title" content="Expertise – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:description" content="Management stratégique, innovation, TQM, gestion de projets, développement durable."/>
+<meta property="og:image" content="https://paternejr-tok.com/e.jpeg"/>
+<meta property="og:image:alt" content="Portrait du Dr. Judicael Paterne TOKOGNON"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://paternejr-tok.com/expertise.html"/>
+<meta name="twitter:title" content="Expertise – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta name="twitter:description" content="Domaines d'expertise : management, innovation, TQM, projets."/>
+<meta name="twitter:image" content="https://paternejr-tok.com/e.jpeg"/>
+<!-- Hreflang -->
+<link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/expertise.html"/>
+<link rel="alternate" hreflang="en" href="https://paternejr-tok.com/expertise.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/expertise.html"/>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- Thème -->
+<meta name="theme-color" content="#07111F"/>
+<!-- Préconnexions Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "https://paternejr-tok.com/expertise.html",
+  "name": "Expertise – Dr. Judicael Paterne R. TOKOGNON",
+  "inLanguage": "fr-FR",
+  "about": {
+    "@type": "Person",
+    "@id": "https://paternejr-tok.com/#person",
+    "name": "Dr. Judicael Paterne Raoul TOKOGNON",
+    "jobTitle": ["Directeur Général Adjoint", "Professeur", "Chercheur"],
+    "knowsAbout": [
+      "Management stratégique",
+      "Innovation des PME",
+      "TQM",
+      "Gestion de projets",
+      "Développement durable",
+      "Partenariats internationaux"
+    ]
+  }
+}
+</script>
 <style>
 :root{
   --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
@@ -235,7 +286,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigation principale">
   <a href="index.html" class="nav-logo">
     <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
   </a>
@@ -248,19 +299,19 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
     <li><a href="galerie.html"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    <div class="lang-switcher" role="group" aria-label="Changement de langue">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 EN</button>
     </div>
     <a href="contact.html" class="nav-cta">Contact</a>
   </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <div class="m-lang">
-    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 English</button>
   </div>
   <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
   <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
@@ -287,7 +338,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </p>
     </div>
     <div class="banner-breadcrumb">
-      <a href="index.html" class="breadcrumb-link">Home</a>
+      <a href="index.html" class="breadcrumb-link"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
       <span class="breadcrumb-sep">›</span>
       <span class="breadcrumb-current">Expertise</span>
     </div>
@@ -322,7 +373,6 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <div class="exp-tags">
           <span class="exp-tag"><span class="lang-fr">Planification</span><span class="lang-en">Planning</span></span>
           <span class="exp-tag"><span class="lang-fr">Performance</span><span class="lang-en">Performance</span></span>
-
         </div>
       </div>
 
@@ -550,7 +600,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
         <div class="lang-name">中文</div>
         <div class="lang-level"><span class="lang-fr">Courant · Enseigné</span><span class="lang-en">Fluent · Taught</span></div>
         <div class="lang-bar-bg"><div class="lang-bar-fill" style="--target-width:85%"></div></div>
-        <div class="lang-note"><span class="lang-fr">Maîtrisé après 7+ ans en Chine (UESTC). Enseigne le chinois. </span><span class="lang-en">Mastered after 7+ years in China (UESTC). Teaches Chinese in 1 week to operational conversation level.</span></div>
+        <div class="lang-note"><span class="lang-fr">Maîtrisé après 7+ ans en Chine (UESTC). Enseigne le chinois en 1 semaine jusqu'au niveau conversationnel opérationnel.</span><span class="lang-en">Mastered after 7+ years in China (UESTC). Teaches Chinese in 1 week to operational conversation level.</span></div>
       </div>
     </div>
   </div>
@@ -617,7 +667,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <div class="thread-sep"></div>
 
 <!-- PAGE NAV -->
-<nav class="page-nav">
+<nav class="page-nav" aria-label="Navigation entre pages">
   <div class="page-nav-inner">
     <a href="recherche.html" class="page-nav-btn">
       <span class="pnb-arrow">←</span>
@@ -641,7 +691,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
   <div class="footer-inner">
     <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
     <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Liens de pied de page">
       <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
       <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
       <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
@@ -661,17 +711,35 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 function setLang(lang){
   document.documentElement.setAttribute('data-lang',lang);
   localStorage.setItem('toko_lang',lang);
-  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+  const btnFr = document.getElementById('btn-fr');
+  const btnEn = document.getElementById('btn-en');
+  const mBtnFr = document.getElementById('m-btn-fr');
+  const mBtnEn = document.getElementById('m-btn-en');
+  if(btnFr) btnFr.classList.toggle('active', lang === 'fr');
+  if(btnEn) btnEn.classList.toggle('active', lang === 'en');
+  if(mBtnFr) mBtnFr.classList.toggle('active', lang === 'fr');
+  if(mBtnEn) mBtnEn.classList.toggle('active', lang === 'en');
+  if(btnFr) btnFr.setAttribute('aria-pressed', lang === 'fr');
+  if(btnEn) btnEn.setAttribute('aria-pressed', lang === 'en');
+  if(mBtnFr) mBtnFr.setAttribute('aria-pressed', lang === 'fr');
+  if(mBtnEn) mBtnEn.setAttribute('aria-pressed', lang === 'en');
 }
 (function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
 
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
-hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
-document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+hamburger.addEventListener('click',()=>{
+  const isOpen = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
+});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+}));
 
 // Reveal + animation barres
 const obs=new IntersectionObserver(entries=>{
