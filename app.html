@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>À Propos – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Biographie et profil de Dr. Judicael Paterne R. TOKOGNON – DGA, Professeur, Chercheur."/>
+<title>Carrière – Dr. Judicael Paterne R. TOKOGNON</title>
+<meta name="description" content="Parcours professionnel de Dr. Judicael Paterne R. TOKOGNON – DGA, Professeur, Consultant."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
-/* ═══════════════ DESIGN SYSTEM ═══════════════ */
 :root{
   --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
   --gold:#C9A84C;--gold-light:#E2C97E;--gold-pale:rgba(201,168,76,.12);
@@ -21,12 +20,9 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);overflow-x:hidden}
 
-/* ── LANGUE ── */
 .lang-en{display:none}
 [data-lang="en"] .lang-fr{display:none}
 [data-lang="en"] .lang-en{display:inline}
-[data-lang="en"] .lang-en.blk{display:block}
-[data-lang="en"] .lang-en.flx{display:flex}
 
 /* ── NAVBAR ── */
 #navbar{
@@ -35,106 +31,43 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);ov
   background:rgba(7,17,31,.97);backdrop-filter:blur(16px);
   box-shadow:0 1px 0 rgba(201,168,76,.12);
 }
-.nav-logo{
-  font-family:'Playfair Display',serif;font-size:20px;font-weight:700;
-  color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:10px;
-}
-.nav-logo .initials{
-  display:inline-flex;width:34px;height:34px;border-radius:50%;
-  background:linear-gradient(135deg,var(--gold),var(--gold-light));
-  color:var(--navy);font-size:13px;font-weight:800;
-  align-items:center;justify-content:center;flex-shrink:0;
-}
+.nav-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo .initials{display:inline-flex;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy);font-size:13px;font-weight:800;align-items:center;justify-content:center;flex-shrink:0}
 .nav-logo span{color:var(--ivory);font-weight:400}
 .nav-links{display:flex;gap:26px;list-style:none;align-items:center}
-.nav-links a{
-  text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--slate);position:relative;transition:color .3s;
-}
-.nav-links a::after{
-  content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;
-  background:var(--gold);transition:width .3s;
-}
+.nav-links a{text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);position:relative;transition:color .3s}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-links a.active::after,.nav-links a:hover::after{width:100%}
 .nav-right{display:flex;align-items:center;gap:14px}
-.nav-cta{
-  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--navy);background:var(--gold);padding:9px 20px;border-radius:3px;
-  text-decoration:none;transition:background .3s,transform .2s;
-}
+.nav-cta{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:9px 20px;border-radius:3px;text-decoration:none;transition:background .3s,transform .2s}
 .nav-cta:hover{background:var(--gold-light);transform:translateY(-1px)}
-.lang-switcher{
-  display:flex;border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden;
-}
-.lang-btn{
-  display:flex;align-items:center;gap:5px;padding:6px 10px;font-size:10px;
-  font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--slate);background:transparent;border:none;cursor:pointer;
-  transition:background .2s,color .2s;
-}
+.lang-switcher{display:flex;border:1px solid rgba(201,168,76,.3);border-radius:4px;overflow:hidden}
+.lang-btn{display:flex;align-items:center;gap:5px;padding:6px 10px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);background:transparent;border:none;cursor:pointer;transition:background .2s,color .2s}
 .lang-btn:first-child{border-right:1px solid rgba(201,168,76,.2)}
 .lang-btn.active{background:rgba(201,168,76,.15);color:var(--gold)}
 .lang-btn:hover:not(.active){background:rgba(255,255,255,.04);color:var(--ivory)}
-.hamburger{
-  display:none;flex-direction:column;gap:5px;cursor:pointer;
-  padding:4px;background:none;border:none;
-}
-.hamburger span{
-  display:block;width:26px;height:2px;background:var(--gold);
-  border-radius:2px;transition:transform .3s,opacity .3s;
-}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:26px;height:2px;background:var(--gold);border-radius:2px;transition:transform .3s,opacity .3s}
 .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .hamburger.open span:nth-child(2){opacity:0}
 .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.mobile-menu{
-  display:none;position:fixed;top:72px;left:0;right:0;
-  background:rgba(7,17,31,.98);backdrop-filter:blur(16px);
-  padding:20px 5% 28px;z-index:99;
-  border-top:1px solid rgba(201,168,76,.15);flex-direction:column;
-}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;background:rgba(7,17,31,.98);backdrop-filter:blur(16px);padding:20px 5% 28px;z-index:99;border-top:1px solid rgba(201,168,76,.15);flex-direction:column}
 .mobile-menu.open{display:flex}
-.mobile-menu a{
-  text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.15em;
-  text-transform:uppercase;color:var(--slate);padding:14px 0;
-  border-bottom:1px solid rgba(255,255,255,.05);transition:color .3s;
-}
+.mobile-menu a{text-decoration:none;font-size:14px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05);transition:color .3s}
 .mobile-menu a:hover{color:var(--gold)}
 .m-lang{display:flex;gap:10px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.05)}
-.m-lang-btn{
-  display:flex;align-items:center;gap:6px;padding:7px 14px;font-size:11px;
-  font-weight:700;color:var(--slate);background:rgba(255,255,255,.04);
-  border:1px solid rgba(255,255,255,.06);border-radius:4px;cursor:pointer;transition:all .2s;
-}
+.m-lang-btn{display:flex;align-items:center;gap:6px;padding:7px 14px;font-size:11px;font-weight:700;color:var(--slate);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:4px;cursor:pointer;transition:all .2s}
 .m-lang-btn.active{color:var(--gold);background:rgba(201,168,76,.12);border-color:rgba(201,168,76,.3)}
 
-/* ── PAGE HERO BANNER ── */
-.page-banner{
-  padding-top:72px;background:var(--navy-mid);
-  border-bottom:1px solid rgba(201,168,76,.1);
-}
-.banner-inner{
-  max-width:1200px;margin:0 auto;padding:60px 5% 50px;
-  display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;
-}
-.banner-left{}
-.page-number{
-  font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
-  color:rgba(201,168,76,.5);margin-bottom:8px;
-}
-.page-title{
-  font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);
-  font-weight:900;color:var(--white);line-height:1.05;
-}
+/* ── PAGE BANNER ── */
+.page-banner{padding-top:72px;background:var(--navy-mid);border-bottom:1px solid rgba(201,168,76,.1)}
+.banner-inner{max-width:1200px;margin:0 auto;padding:60px 5% 50px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.page-number{font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:rgba(201,168,76,.5);margin-bottom:8px}
+.page-title{font-family:'Playfair Display',serif;font-size:clamp(36px,5vw,56px);font-weight:900;color:var(--white);line-height:1.05}
 .page-title .gold{color:var(--gold);font-style:italic}
-.page-desc{
-  font-size:15px;color:var(--slate);line-height:1.7;
-  max-width:520px;margin-top:14px;
-}
-.banner-breadcrumb{
-  display:flex;align-items:center;gap:8px;font-size:11px;
-  font-weight:600;letter-spacing:.1em;text-transform:uppercase;
-}
+.page-desc{font-size:15px;color:var(--slate);line-height:1.7;max-width:520px;margin-top:14px}
+.banner-breadcrumb{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
 .breadcrumb-link{color:var(--gold);text-decoration:none;transition:opacity .2s}
 .breadcrumb-link:hover{opacity:.7}
 .breadcrumb-sep{color:var(--slate)}
@@ -142,256 +75,186 @@ body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ivory);ov
 
 /* ── COMMONS ── */
 .section-inner{max-width:1200px;margin:0 auto;padding:90px 5%}
-.section-eyebrow{
-  display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:600;
-  letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;
-}
+.section-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
 .section-eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--gold)}
-.section-title{
-  font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,44px);
-  font-weight:700;color:var(--white);line-height:1.15;margin-bottom:14px;
-}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,44px);font-weight:700;color:var(--white);line-height:1.15;margin-bottom:14px}
 .gold-text{color:var(--gold);font-style:italic}
+.section-subtitle{font-size:15px;color:var(--slate);line-height:1.75;max-width:580px;margin-bottom:60px}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:translateY(0)}
-.reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}
-.reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
-.reveal-delay-5{transition-delay:.5s}
-.thread-sep{
-  height:2px;
-  background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.08) 20%,
-    rgba(201,168,76,.35) 50%,rgba(201,168,76,.08) 80%,transparent 100%);
-  position:relative;
-}
-.thread-sep::before{
-  content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-  width:6px;height:6px;background:var(--gold);border-radius:50%;
-  box-shadow:0 0 12px rgba(201,168,76,.5);
-}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:10px;padding:13px 30px;
-  background:var(--gold);color:var(--navy);font-size:12px;font-weight:700;
-  letter-spacing:.15em;text-transform:uppercase;text-decoration:none;
-  border-radius:3px;transition:background .3s,transform .2s,box-shadow .3s;
-}
-.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.35)}
-.btn-outline{
-  display:inline-flex;align-items:center;gap:10px;padding:13px 30px;
-  border:1px solid rgba(201,168,76,.5);color:var(--gold-light);font-size:12px;
-  font-weight:600;letter-spacing:.15em;text-transform:uppercase;
-  text-decoration:none;border-radius:3px;background:transparent;
-  transition:background .3s,border-color .3s;
-}
-.btn-outline:hover{background:rgba(201,168,76,.08);border-color:var(--gold)}
+.reveal-delay-1{transition-delay:.12s}.reveal-delay-2{transition-delay:.22s}
+.reveal-delay-3{transition-delay:.32s}.reveal-delay-4{transition-delay:.42s}
+.reveal-delay-5{transition-delay:.52s}
+.thread-sep{height:2px;background:linear-gradient(90deg,transparent 0%,rgba(201,168,76,.08) 20%,rgba(201,168,76,.35) 50%,rgba(201,168,76,.08) 80%,transparent 100%);position:relative}
+.thread-sep::before{content:'';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 12px rgba(201,168,76,.5)}
 
-/* ── ABOUT MAIN ── */
-#about-main{background:var(--navy-mid)}
-.about-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:72px;align-items:start;
+/* ── TIMELINE ── */
+#career{background:var(--navy-mid)}
+.timeline-wrap{display:grid;grid-template-columns:1fr 3fr;gap:0;align-items:start}
+.timeline-nav{position:sticky;top:100px}
+.tl-nav-title{font-size:10px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.tl-nav-item{
+  display:flex;align-items:flex-start;gap:12px;padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer;
+  transition:all .2s;
 }
+.tl-nav-item:last-child{border-bottom:none}
+.tl-nav-dot{
+  width:8px;height:8px;border-radius:50%;background:rgba(201,168,76,.25);
+  flex-shrink:0;margin-top:5px;transition:background .3s;
+}
+.tl-nav-item:hover .tl-nav-dot,.tl-nav-item.active .tl-nav-dot{background:var(--gold)}
+.tl-nav-year{font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--slate);margin-bottom:2px;transition:color .2s}
+.tl-nav-item:hover .tl-nav-year,.tl-nav-item.active .tl-nav-year{color:var(--gold)}
+.tl-nav-label{font-size:11px;color:rgba(138,155,176,.6);line-height:1.4}
 
-/* Photo grid */
-.about-photos{
-  display:grid;grid-template-columns:1fr 1fr;
-  grid-template-rows:auto auto;gap:12px;
-  position:relative;
+/* Timeline main */
+.timeline{position:relative;padding-left:52px}
+.timeline::before{
+  content:'';position:absolute;left:17px;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom,transparent,var(--gold) 8%,var(--gold) 92%,transparent);
+  opacity:.3;
 }
-.about-photo{
-  border-radius:var(--radius);overflow:hidden;
-  background:var(--navy-card);position:relative;
-}
-.about-photo img{
-  width:100%;height:100%;object-fit:cover;
-  object-position:top center;
-  display:block;filter:saturate(.8);
-  transition:transform .5s ease,filter .5s ease;
-}
-.about-photo:hover img{transform:scale(1.04);filter:saturate(1)}
-.about-photo.tall{grid-row:span 2;min-height:420px}
-.about-photo.short{min-height:200px}
-.photo-placeholder{
-  width:100%;height:100%;min-height:inherit;
+.timeline-item{position:relative;margin-bottom:52px}
+.timeline-item:last-child{margin-bottom:0}
+.timeline-dot{
+  position:absolute;left:-43px;top:8px;width:16px;height:16px;border-radius:50%;
+  background:var(--navy-mid);border:2px solid var(--gold);
+  transition:background .3s,box-shadow .3s;
   display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,var(--navy-card),#1E3A5F);
-  color:var(--gold);font-family:'Playfair Display',serif;font-size:40px;
 }
-.gold-corner-badge{
-  position:absolute;bottom:-14px;right:-14px;
-  width:96px;height:96px;background:var(--gold);border-radius:50%;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
-  box-shadow:0 8px 32px rgba(201,168,76,.4);z-index:2;
+.timeline-dot::after{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.timeline-item:hover .timeline-dot{background:var(--gold);box-shadow:0 0 16px rgba(201,168,76,.4)}
+.timeline-item:hover .timeline-dot::after{background:var(--navy)}
+
+.timeline-period{
+  font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:12px;display:flex;align-items:center;gap:10px;
 }
-.corner-num{
-  font-family:'Playfair Display',serif;font-size:22px;font-weight:900;
-  color:var(--navy);line-height:1;
-}
-.corner-text{
-  font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
-  color:var(--navy);text-align:center;line-height:1.3;
+.period-badge{
+  display:inline-block;font-size:9px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 10px;border-radius:2px;
+  background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.2);
+  color:var(--gold-light);
 }
 
-/* About text */
-.about-intro{
-  font-size:17px;line-height:1.85;color:var(--ivory);margin-bottom:22px;
-}
-.about-intro strong{color:var(--gold);font-weight:600}
-.about-body{
-  font-size:14px;line-height:1.9;color:var(--slate);margin-bottom:28px;
-}
-.about-body strong{color:var(--ivory)}
-
-/* Langues */
-.lang-highlight{
-  background:rgba(201,168,76,.06);border-left:3px solid var(--gold);
-  padding:20px 24px;margin-bottom:28px;
+.timeline-card{
+  background:var(--navy-card);border:1px solid rgba(255,255,255,.06);
+  border-left:3px solid var(--gold);
   border-radius:0 var(--radius) var(--radius) 0;
+  padding:28px 32px;
+  transition:border-color .3s,box-shadow .3s,transform .3s;
 }
-.lang-highlight p{font-size:14px;line-height:1.8;color:var(--ivory)}
-.lang-highlight strong{color:var(--gold)}
-.lang-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-.lang-tag{
-  display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
-  color:var(--gold-light);background:rgba(201,168,76,.08);
-  padding:6px 16px;border-radius:3px;border:1px solid rgba(201,168,76,.2);
+.timeline-item:hover .timeline-card{
+  border-color:rgba(201,168,76,.5);
+  box-shadow:0 12px 48px rgba(0,0,0,.35);
+  transform:translateX(5px);
 }
-.lang-tag .fluency{font-size:10px;font-weight:400;color:var(--slate);letter-spacing:.05em}
 
-/* Info grid */
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
-.info-item{
-  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
-  border-radius:var(--radius);padding:16px 18px;
+.timeline-role{
+  font-family:'Playfair Display',serif;font-size:22px;font-weight:700;
+  color:var(--white);margin-bottom:6px;line-height:1.25;
 }
-.info-label{
-  font-size:10px;font-weight:600;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--gold);margin-bottom:6px;
+.timeline-org{
+  font-size:13px;font-weight:600;color:var(--gold-light);
+  margin-bottom:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;
 }
-.info-value{font-size:13px;color:var(--ivory);font-weight:500;line-height:1.5}
+.org-sep{color:rgba(255,255,255,.15)}
+.timeline-desc{font-size:14px;line-height:1.85;color:var(--slate);margin-bottom:14px}
+.timeline-desc strong{color:var(--ivory)}
 
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-
-/* ── PERSONAL INFO SECTION ── */
-#personal{background:var(--navy)}
-.personal-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+.task-list{list-style:none;display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.task-list li{
+  display:flex;align-items:flex-start;gap:10px;
+  font-size:13px;color:var(--slate);line-height:1.6;
 }
-.personal-card{
+.task-list li::before{
+  content:'›';color:var(--gold);font-size:14px;font-weight:700;
+  flex-shrink:0;margin-top:1px;
+}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.tl-tag{
+  display:inline-block;font-size:10px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;padding:5px 12px;border-radius:2px;
+  background:rgba(201,168,76,.08);color:var(--gold);border:1px solid rgba(201,168,76,.15);
+}
+.tl-tag.current{background:rgba(46,125,50,.12);color:#81C784;border-color:rgba(46,125,50,.3)}
+
+/* ── KEY HIGHLIGHTS ── */
+#highlights{background:var(--navy)}
+.highlights-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hl-card{
   background:var(--navy-card);border:1px solid rgba(255,255,255,.06);
-  border-radius:var(--radius);padding:28px 22px;text-align:center;
-  transition:transform .3s,border-color .3s;
-}
-.personal-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,.25)}
-.pc-icon{font-size:30px;display:block;margin-bottom:12px}
-.pc-label{
-  font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:8px;
-}
-.pc-value{font-size:14px;color:var(--ivory);font-weight:500;line-height:1.5}
-.pc-sub{font-size:11px;color:var(--slate);margin-top:4px;line-height:1.4}
-
-/* ── INTERESTS ── */
-#interests{background:var(--navy-mid)}
-.interests-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
-}
-.interest-card{
-  background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.15);
-  border-radius:var(--radius);padding:28px 20px;text-align:center;
-  transition:background .3s,border-color .3s,transform .2s;
+  border-radius:var(--radius);padding:28px 24px;text-align:center;
   position:relative;overflow:hidden;
+  transition:transform .3s,border-color .3s,box-shadow .3s;
 }
-.interest-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:linear-gradient(90deg,var(--gold),var(--gold-light));
-  transform:scaleX(0);transform-origin:left;transition:transform .4s;
+.hl-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0;transition:opacity .3s;
 }
-.interest-card:hover{background:rgba(201,168,76,.09);border-color:var(--gold);transform:translateY(-3px)}
-.interest-card:hover::before{transform:scaleX(1)}
-.int-icon{font-size:36px;display:block;margin-bottom:14px}
-.int-title{
-  font-family:'Playfair Display',serif;font-size:17px;font-weight:700;
-  color:var(--white);margin-bottom:8px;
+.hl-card:hover{transform:translateY(-5px);border-color:rgba(201,168,76,.2);box-shadow:0 16px 48px rgba(0,0,0,.3)}
+.hl-card:hover::after{opacity:1}
+.hl-icon{font-size:32px;display:block;margin-bottom:14px}
+.hl-num{
+  font-family:'Playfair Display',serif;font-size:36px;font-weight:900;
+  color:var(--gold);line-height:1;margin-bottom:6px;
 }
-.int-desc{font-size:13px;color:var(--slate);line-height:1.65}
+.hl-label{font-size:13px;color:var(--slate);line-height:1.5}
 
-/* ── REFERENCES ── */
-#references{background:var(--navy)}
-.ref-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.ref-card{
-  background:var(--navy-card);border:1px solid rgba(255,255,255,.06);
-  border-radius:var(--radius);padding:28px 28px;
-  border-left:3px solid rgba(201,168,76,.4);
-  transition:border-color .3s,transform .3s;
+/* ── NAVIGATION PAGES ── */
+.page-nav{
+  background:var(--navy-mid);border-top:1px solid rgba(201,168,76,.1);
+  padding:0;
 }
-.ref-card:hover{border-color:var(--gold);transform:translateX(4px)}
-.ref-name{
-  font-family:'Playfair Display',serif;font-size:18px;font-weight:700;
-  color:var(--white);margin-bottom:6px;
+.page-nav-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;
 }
-.ref-role{font-size:13px;color:var(--gold-light);font-style:italic;margin-bottom:14px}
-.ref-contact{display:flex;flex-direction:column;gap:6px}
-.ref-line{
-  display:flex;align-items:center;gap:10px;font-size:13px;color:var(--slate);
+.page-nav-btn{
+  display:flex;align-items:center;gap:16px;padding:30px 5%;
+  text-decoration:none;transition:background .25s;
 }
-.ref-line a{color:var(--slate);text-decoration:none;transition:color .2s}
-.ref-line a:hover{color:var(--gold)}
+.page-nav-btn:hover{background:rgba(201,168,76,.05)}
+.page-nav-btn.next{justify-content:flex-end;text-align:right;border-left:1px solid rgba(255,255,255,.05)}
+.pnb-dir{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.pnb-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white)}
+.pnb-arrow{font-size:22px;color:var(--gold)}
 
 /* ── FOOTER ── */
-footer{
-  background:#060F1E;padding:40px 5% 32px;
-  border-top:1px solid rgba(201,168,76,.1);
-}
-.footer-inner{
-  max-width:1200px;margin:0 auto;display:flex;align-items:center;
-  justify-content:space-between;flex-wrap:wrap;gap:20px;
-  padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.04);
-}
-.footer-logo{
-  font-family:'Playfair Display',serif;font-size:20px;font-weight:700;
-  color:var(--gold);text-decoration:none;
-}
+footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168,76,.1)}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.04)}
+.footer-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);text-decoration:none}
 .footer-copy{font-size:12px;color:var(--slate)}
 .footer-links{display:flex;gap:24px;flex-wrap:wrap}
-.footer-links a{
-  font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--slate);text-decoration:none;transition:color .3s;
-}
+.footer-links a{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);text-decoration:none;transition:color .3s}
 .footer-links a:hover{color:var(--gold)}
-.footer-bottom{
-  display:flex;justify-content:space-between;align-items:center;
-  flex-wrap:wrap;gap:12px;padding-top:20px;max-width:1200px;margin:0 auto;
-}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:20px;max-width:1200px;margin:0 auto}
 .footer-credit{font-size:11px;color:var(--slate)}
 .footer-credit strong{color:var(--gold);font-weight:600}
 
 /* ── RESPONSIVE ── */
-@media(max-width:1024px){
-  .personal-grid{grid-template-columns:repeat(2,1fr)}
-  .interests-grid{grid-template-columns:repeat(2,1fr)}
-}
+@media(max-width:1024px){.timeline-wrap{grid-template-columns:1fr}.timeline-nav{display:none}}
 @media(max-width:768px){
-  .about-grid{grid-template-columns:1fr;gap:40px}
-  .about-photos{order:-1;grid-template-columns:1fr 1fr}
-  .about-photo.tall{min-height:240px}
-  .about-photo.short{min-height:130px}
-  .info-grid{grid-template-columns:1fr}
-  .personal-grid{grid-template-columns:1fr 1fr}
-  .interests-grid{grid-template-columns:1fr 1fr}
-  .ref-grid{grid-template-columns:1fr}
+  .highlights-grid{grid-template-columns:1fr}
   .nav-links,.nav-cta,.lang-switcher{display:none}
   .hamburger{display:flex}
   .section-inner{padding:60px 5%}
+  .timeline{padding-left:36px}
+  .timeline::before{left:11px}
+  .timeline-dot{left:-29px}
+  .timeline-card{padding:20px 18px}
+  .timeline-role{font-size:18px}
   .footer-inner{flex-direction:column;text-align:center}
   .footer-links{justify-content:center}
   .footer-bottom{flex-direction:column;text-align:center}
   .banner-inner{flex-direction:column;gap:14px}
+  .page-nav-inner{grid-template-columns:1fr}
+  .page-nav-btn.next{border-left:none;border-top:1px solid rgba(255,255,255,.05)}
 }
-@media(max-width:480px){
-  .personal-grid{grid-template-columns:1fr}
-  .interests-grid{grid-template-columns:1fr 1fr}
-  .page-title{font-size:clamp(30px,8vw,38px)}
-}
+@media(max-width:480px){.highlights-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -399,12 +262,11 @@ footer{
 <!-- NAVBAR -->
 <nav id="navbar">
   <a href="index.html" class="nav-logo">
-    <span class="initials">JPT</span>
-    Dr. <span>TOKOGNON</span>
+    <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
   </a>
   <ul class="nav-links">
-    <li><a href="apropos.html" class="active"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a></li>
-    <li><a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a></li>
+    <li><a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a></li>
+    <li><a href="carriere.html" class="active"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a></li>
     <li><a href="formation.html"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a></li>
     <li><a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a></li>
     <li><a href="expertise.html">Expertise</a></li>
@@ -412,15 +274,14 @@ footer{
   </ul>
   <div class="nav-right">
     <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')"><span>🇫🇷</span> FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')"><span>🇬🇧</span> EN</button>
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
     </div>
     <a href="contact.html" class="nav-cta">Contact</a>
   </div>
   <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="m-lang">
     <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
@@ -436,212 +297,300 @@ footer{
   <a href="contact.html">Contact</a>
 </div>
 
-<!-- PAGE BANNER -->
+<!-- BANNER -->
 <div class="page-banner">
   <div class="banner-inner">
     <div class="banner-left">
-      <div class="page-number">01 / 08</div>
+      <div class="page-number">02 / 08</div>
       <h1 class="page-title">
-        <span class="lang-fr">À <span class="gold">Propos</span></span>
-        <span class="lang-en">About <span class="gold">Me</span></span>
+        <span class="lang-fr"><span class="gold">Parcours</span> Professionnel</span>
+        <span class="lang-en">Professional <span class="gold">Career</span></span>
       </h1>
       <p class="page-desc">
-        <span class="lang-fr">Biographie, profil international et compétences multidisciplinaires de Dr. Judicael Paterne Raoul TOKOGNON.</span>
-        <span class="lang-en">Biography, international profile and multidisciplinary skills of Dr. Judicael Paterne Raoul TOKOGNON.</span>
+        <span class="lang-fr">Une trajectoire d'exception entre direction industrielle, enseignement supérieur et recherche académique internationale.</span>
+        <span class="lang-en">An exceptional trajectory spanning industrial management, higher education and international academic research.</span>
       </p>
     </div>
     <div class="banner-breadcrumb">
       <a href="index.html" class="breadcrumb-link">Home</a>
       <span class="breadcrumb-sep">›</span>
-      <span class="breadcrumb-current"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></span>
+      <span class="breadcrumb-current"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></span>
     </div>
   </div>
 </div>
 
-<!-- ABOUT MAIN -->
-<section id="about-main">
+<!-- CAREER TIMELINE -->
+<section id="career">
   <div class="section-inner">
-    <div class="about-grid">
+    <div class="timeline-wrap">
 
-      <!-- Photos gauche -->
-      <div class="about-photos reveal">
-        <!-- Photo principale (grande) -->
-        <div class="about-photo tall">
-          <img src="e.jpeg" alt="Dr. Judicael Paterne TOKOGNON"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-          <div class="photo-placeholder" style="display:none">JPT</div>
+      <!-- Nav latérale sticky (desktop) -->
+      <div class="timeline-nav reveal">
+        <div class="tl-nav-title"><span class="lang-fr">Expériences</span><span class="lang-en">Experiences</span></div>
+        <div class="tl-nav-item active" onclick="scrollTo('job1')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2023 →</div><div class="tl-nav-label">DGA · CBT</div></div>
         </div>
-        <!-- Petite photo haut droite -->
-        <div class="about-photo short">
-          <img src="f.jpeg" alt="Dr. TOKOGNON"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-          <div class="photo-placeholder" style="display:none;font-size:24px">◆</div>
+        <div class="tl-nav-item" onclick="scrollTo('job2')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2020 – 2023</div><div class="tl-nav-label"><span class="lang-fr">Professeur</span><span class="lang-en">Professor</span></div></div>
         </div>
-        <!-- Petite photo bas droite -->
-        <div class="about-photo short">
-          <img src="g.jpeg" alt="Dr. TOKOGNON"
-               onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
-          <div class="photo-placeholder" style="display:none;font-size:24px">◆</div>
+        <div class="tl-nav-item" onclick="scrollTo('job3')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2014 →</div><div class="tl-nav-label">Consultant · GML</div></div>
         </div>
-        <!-- Badge doré -->
-        <div class="gold-corner-badge">
-          <span class="corner-num">PhD</span>
-          <span class="corner-text">UESTC<br/>Chine 2019</span>
+        <div class="tl-nav-item" onclick="scrollTo('job4')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2016 – 2019</div><div class="tl-nav-label">Assou Yannick · Chine</div></div>
+        </div>
+        <div class="tl-nav-item" onclick="scrollTo('job5')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2010</div><div class="tl-nav-label">DG · AGEMA-AFRIQUE</div></div>
+        </div>
+        <div class="tl-nav-item" onclick="scrollTo('job6')">
+          <div class="tl-nav-dot"></div>
+          <div><div class="tl-nav-year">2008 – 2009</div><div class="tl-nav-label">COTAIR Airlines</div></div>
         </div>
       </div>
 
-      <!-- Texte droite -->
-      <div class="about-text">
-        <div class="section-eyebrow reveal">
-          <span class="lang-fr">Qui suis-je ?</span>
-          <span class="lang-en">Who am I?</span>
-        </div>
-        <h2 class="section-title reveal reveal-delay-1">
-          <span class="lang-fr">Un leadership ancré dans<br/><span class="gold-text">l'excellence</span></span>
-          <span class="lang-en">Leadership rooted in<br/><span class="gold-text">excellence</span></span>
-        </h2>
+      <!-- Timeline principale -->
+      <div class="timeline">
 
-        <p class="about-intro reveal reveal-delay-2">
-          <span class="lang-fr">
-            Né de la rigueur académique et forgé par une expérience internationale,
-            <strong>Dr. Judicael Paterne R. TOKOGNON</strong> incarne l'union entre
-            la recherche scientifique et l'action industrielle au Bénin.
-          </span>
-          <span class="lang-en">
-            Born from academic rigor and shaped by international experience,
-            <strong>Dr. Judicael Paterne R. TOKOGNON</strong> embodies the union between
-            scientific research and industrial action in Benin.
-          </span>
-        </p>
-
-        <p class="about-body reveal reveal-delay-2">
-          <span class="lang-fr">
-            Formé à l'Université des Sciences Électroniques et Technologies de Chine (UESTC),
-            il a consacré ses travaux à l'<strong>innovation des PME</strong>, au
-            <strong>Management de la Qualité Totale (TQM)</strong> et aux
-            <strong>politiques de développement durable</strong>. Aujourd'hui Directeur Général
-            Adjoint de la Compagnie Béninoise des Textiles, il allie quotidiennement vision
-            industrielle, rigueur académique et leadership transformationnel.
-          </span>
-          <span class="lang-en">
-            Trained at the University of Electronic Science and Technology of China (UESTC),
-            his work has focused on <strong>SME innovation</strong>,
-            <strong>Total Quality Management (TQM)</strong> and
-            <strong>sustainable development policies</strong>. Today as Deputy General Manager
-            of the Beninese Textile Company, he combines industrial vision, academic rigor and
-            transformational leadership on a daily basis.
-          </span>
-        </p>
-
-        <!-- Langues -->
-        <div class="lang-highlight reveal reveal-delay-3">
-          <p>
-            <span class="lang-fr">
-              <strong>🌍 Trilingue &amp; Pédagogue :</strong> Dr. TOKOGNON maîtrise couramment
-              le <strong>français</strong>, l'<strong>anglais</strong> et le <strong>chinois</strong>.
-              Fort de son expérience en Chine , aux Etats-Unies et au Bénin, il a développé une méthode d'apprentissage
-              immersive permettant d'acquérir une conversation opérationnelle en anglais ou en chinois
-              .
-            </span>
-            <span class="lang-en">
-              <strong>🌍 Trilingual &amp; Educator:</strong> Dr. TOKOGNON is fluent in
-              <strong>French</strong>, <strong>English</strong> and <strong>Chinese</strong>.
-              Drawing on his experience in China, USA and Benin, he developed an immersive learning
-              method allowing students to achieve conversational level in English or Chinese
-             .
-            </span>
-          </p>
-          <div class="lang-tags">
-            <span class="lang-tag">🇫🇷 Français <span class="fluency">· natif / native</span></span>
-            <span class="lang-tag">🇬🇧 English <span class="fluency">· courant / fluent</span></span>
-            <span class="lang-tag">🇨🇳 中文 <span class="fluency">· courant / fluent</span></span>
-            <span class="lang-tag" style="border-color:var(--gold);background:rgba(201,168,76,.12)">
-              🎓 <span class="lang-fr">Enseigne anglais &amp; chinois et les cours de management scientifique</span><span class="lang-en">Teaches English &amp; Chinese</span>
+        <!-- 1 – DGA CBT -->
+        <div class="timeline-item reveal" id="job1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">Depuis Octobre 2023</span>
+            <span class="lang-en">Since October 2023</span>
+            <span class="period-badge" style="background:rgba(46,125,50,.12);color:#81C784;border-color:rgba(46,125,50,.3)">
+              <span class="lang-fr">Poste actuel</span><span class="lang-en">Current role</span>
             </span>
           </div>
-        </div>
-
-        <!-- Infos -->
-        <div class="info-grid reveal reveal-delay-4">
-          <div class="info-item">
-            <div class="info-label"><span class="lang-fr">Fonction</span><span class="lang-en">Position</span></div>
-            <div class="info-value"><span class="lang-fr">Directeur Général Adjoint – CBT</span><span class="lang-en">Deputy General Manager – CBT</span></div>
-          </div>
-          <div class="info-item">
-            <div class="info-label"><span class="lang-fr">Localisation</span><span class="lang-en">Location</span></div>
-            <div class="info-value">Lokossa, <span class="lang-fr">République du Bénin</span><span class="lang-en">Republic of Benin</span></div>
-          </div>
-          <div class="info-item">
-            <div class="info-label"><span class="lang-fr">Secteurs</span><span class="lang-en">Sectors</span></div>
-            <div class="info-value"><span class="lang-fr">Industrie · Éducation · Entrepreneuriat</span><span class="lang-en">Industry · Education · Entrepreneurship</span></div>
-          </div>
-          <div class="info-item">
-            <div class="info-label"><span class="lang-fr">Téléphone</span><span class="lang-en">Phone</span></div>
-            <div class="info-value">(+229) 01 67 85 45 34</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">Email</div>
-            <div class="info-value">paternejr@gmail.com</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">LinkedIn</div>
-            <div class="info-value" style="font-size:11px">dr-judicaël-paterne-r-tokognon</div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Directeur Général Adjoint (DGA)</span>
+              <span class="lang-en">Deputy General Manager (DGM)</span>
+            </div>
+            <div class="timeline-org">
+              <span>Compagnie Béninoise des Textiles (CBT)</span>
+              <span class="org-sep">·</span>
+              <span>Lokossa, Bénin</span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Pilotage stratégique et opérationnel à temps plein de l'une des principales entreprises industrielles du secteur textile au Bénin.</span><span class="lang-en">Full-time strategic and operational management of one of Benin's leading industrial textile companies.</span></li>
+              <li><span class="lang-fr"> Gestion administrative , Organisation professionnelle et Commerciale de l'Entreprise </span><span class="lang-en"></span></li>
+              
+              <li><span class="lang-fr">Gestion des activités de production,Supervision de la qualité, innovation et développement institutionnel. </span><span class="lang-en">Supervision of production activities, quality management, innovation and institutional development.</span></li>
+              
+              <li><span class="lang-fr">Mise en œuvre de politiques d'innovation et de gestion de la qualité inspirées de ses travaux de recherche doctorale.</span><span class="lang-en">Implementation of innovation and quality management policies inspired by doctoral research.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag current"><span class="lang-fr">Poste à temps plein</span><span class="lang-en">Full-time</span></span>
+              <span class="tl-tag"><span class="lang-fr">Direction industrielle</span><span class="lang-en">Industrial management</span></span>
+              <span class="tl-tag">TQM</span>
+              <span class="tl-tag"><span class="lang-fr">Stratégie</span><span class="lang-en">Strategy</span></span>
+            </div>
           </div>
         </div>
 
-        <div class="hero-actions reveal reveal-delay-5">
-          <a href="carriere.html" class="btn-primary">
-            <span class="lang-fr">Voir mon parcours →</span>
-            <span class="lang-en">View my career →</span>
-          </a>
-          <a href="contact.html" class="btn-outline">
-            <span class="lang-fr">Me contacter</span>
-            <span class="lang-en">Get in touch</span>
-          </a>
-        </div>
-      </div>
 
-    </div>
+        <div class="timeline-item reveal reveal-delay-1" id="job2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">2023 – 2025· Elu conçulaire à la Chambre de Commerce et d'Industrie du Bénin.</span>
+        
+          </div>
+        </div>  
+        
+        <!-- 2 – Professeur -->
+        <div class="timeline-item reveal reveal-delay-1" id="job2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">2020 – 2023 · Années académiques</span>
+            <span class="lang-en">2020 – 2023 · Academic years</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Professeur du Supérieur</span>
+              <span class="lang-en">University Professor</span>
+            </div>
+            <div class="timeline-org">
+              <span>HECM · ISM Adonaï · ESM Bénin</span>
+              <span class="org-sep">·</span>
+              <span>Bénin</span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Cours d'Entrepreneuriat et Gestion des Projets, Gestion Axée sur les Résultats (GAR).</span><span class="lang-en">Courses in Entrepreneurship, Project Management, and Results-Based Management (RBM).</span></li>
+              <li><span class="lang-fr">Professeur Examinateur de jury de soutenance en Licence et Master professionnelle.</span><span class="lang-en">Examination jury member for Bachelor's and Professional Master's thesis defenses.</span></li>
+              <li><span class="lang-fr">Cours d'Initiation, Planification, Suivi et Évaluation de projet.</span><span class="lang-en">Courses in Project Initiation, Planning, Monitoring and Evaluation.</span></li>
+              <li><span class="lang-fr">Cours de Pertinence des projets et gestion des risques.</span><span class="lang-en">Courses in Project Relevance and Risk Management.</span></li>
+              <li>
+                <span class="lang-fr"><strong>Professeur de langue Chinoise</strong> — Méthode intensive : conversation opérationnelle .</span>
+                <span class="lang-en"><strong>Chinese Language Professor</strong> — Intensive method: operational conversation in one week.</span>
+              </li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Enseignement supérieur</span><span class="lang-en">Higher education</span></span>
+              <span class="tl-tag"><span class="lang-fr">Jury de soutenance</span><span class="lang-en">Defense jury</span></span>
+              <span class="tl-tag">🇨🇳 <span class="lang-fr">Langue Chinoise</span><span class="lang-en">Chinese Language</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 – Consultant GML -->
+        <div class="timeline-item reveal reveal-delay-2" id="job3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">Depuis Octobre 2014</span>
+            <span class="lang-en">Since October 2014</span>
+            <span class="period-badge"><span class="lang-fr">Temps partiel</span><span class="lang-en">Part-time</span></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Consultant Freelance — Stratégies &amp; Communication</span>
+              <span class="lang-en">Freelance Consultant — Strategy &amp; Communication</span>
+            </div>
+            <div class="timeline-org">
+              <span>GML Sarl</span>
+              <span class="org-sep">·</span>
+              <span>Bénin / <span class="lang-fr">Chine</span><span class="lang-en">China</span></span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Gestion de missions commerciales d'acquisition de matériels en Chine.</span><span class="lang-en">Management of commercial equipment acquisition missions in China.</span></li>
+              <li><span class="lang-fr">Recherche d'opportunités d'affaires et négociations de partenariats chinois et sous-régionaux.</span><span class="lang-en">Business opportunity research and negotiation of Chinese and sub-regional partnerships.</span></li>
+              <li><span class="lang-fr">Préparation de documents de stratégies, d'orientations et de plans d'affaires.</span><span class="lang-en">Preparation of strategy documents, guidelines and business plans.</span></li>
+              <li><span class="lang-fr">Gestion de projets de constructions et d'aménagements.</span><span class="lang-en">Management of construction and development projects.</span></li>
+              <li><span class="lang-fr">Préparation des dossiers d'appel d'offres et négociations avec les partenaires.</span><span class="lang-en">Preparation of tender files and negotiations with partners.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Partenariats Chine</span><span class="lang-en">China partnerships</span></span>
+              <span class="tl-tag"><span class="lang-fr">Stratégie</span><span class="lang-en">Strategy</span></span>
+              <span class="tl-tag"><span class="lang-fr">Appels d'offres</span><span class="lang-en">Tenders</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 – Assou Yannick Chine -->
+        <div class="timeline-item reveal reveal-delay-1" id="job4">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Mars 2016 – Novembre 2019</div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Coordonnateur des Partenariats &amp; Développement des Affaires</span>
+              <span class="lang-en">Partnerships &amp; Business Development Coordinator</span>
+            </div>
+            <div class="timeline-org">
+              <span>Assou Yannick Co. Ltd</span>
+              <span class="org-sep">·</span>
+              <span>Hunan, <span class="lang-fr">Chine</span><span class="lang-en">China</span></span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Coordination commerciale et identification de partenaires potentiels étrangers.</span><span class="lang-en">Commercial coordination and identification of potential foreign partners.</span></li>
+              <li><span class="lang-fr">Diagnostic des besoins de partenariat ; évaluation des avantages et risques associés.</span><span class="lang-en">Partnership needs assessment; evaluation of advantages and associated risks.</span></li>
+              <li><span class="lang-fr">Projet de recyclage de plastique pour la fabrication de granulés en Turquie.</span><span class="lang-en">Plastic recycling project for granule manufacturing in Turkey.</span></li>
+              <li><span class="lang-fr">Projet d'exportation de manioc, soja, noix d'acajou vers Shandong et d'autres villes en Chine.</span><span class="lang-en">Export project for cassava, soybeans, cashews to Shandong and other Chinese cities.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Chine · Afrique</span><span class="lang-en">China · Africa</span></span>
+              <span class="tl-tag"><span class="lang-fr">Commerce international</span><span class="lang-en">International trade</span></span>
+              <span class="tl-tag"><span class="lang-fr">Thèse doctorale</span><span class="lang-en">Doctoral research</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 – AGEMA AFRIQUE -->
+        <div class="timeline-item reveal reveal-delay-2" id="job5">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">Février – Août 2010</span>
+            <span class="lang-en">February – August 2010</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Directeur Général</span>
+              <span class="lang-en">General Manager</span>
+            </div>
+            <div class="timeline-org">
+              <span>AGEMA-AFRIQUE S.A</span>
+              <span class="org-sep">·</span>
+              <span>Cotonou, Bénin</span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Gestion de la plateforme de location de voitures de luxe et haut de gamme pour officiels, VIP et touristes.</span><span class="lang-en">Management of a luxury car rental platform for officials, VIPs and tourists.</span></li>
+              <li><span class="lang-fr">Supervision du système d'exploitation de la plateforme.</span><span class="lang-en">Supervision of the platform's operating system.</span></li>
+              <li><span class="lang-fr">Analyse des besoins et solutions personnalisées pour chaque client.</span><span class="lang-en">Needs analysis and customized solutions for each client.</span></li>
+              <li><span class="lang-fr">Communication stratégique pour la vente et le service client.</span><span class="lang-en">Strategic communication for sales and customer service.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Direction générale</span><span class="lang-en">General management</span></span>
+              <span class="tl-tag"><span class="lang-fr">Services haut de gamme</span><span class="lang-en">Premium services</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 – COTAIR Airlines -->
+        <div class="timeline-item reveal reveal-delay-3" id="job6">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">
+            <span class="lang-fr">Mars 2008 – Décembre 2009</span>
+            <span class="lang-en">March 2008 – December 2009</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-role">
+              <span class="lang-fr">Chef d'Agence /Chef d'escale / Représentant</span>
+              <span class="lang-en">Branch Manager /Escal Manager / Representative</span>
+            </div>
+            <div class="timeline-org">
+              <span>COTAIR Airlines</span>
+              <span class="org-sep">·</span>
+              <span>Parakou, Bénin</span>
+            </div>
+            <ul class="task-list">
+              <li><span class="lang-fr">Représentation de la compagnie aérienne auprès des autorités locales.</span><span class="lang-en">Representation of the airline with local authorities.</span></li>
+              <li><span class="lang-fr">Gestion opérationnelle et supervision des activités et des vols à l'aéroport de Parakou.</span><span class="lang-en">Operational management and supervision of activities and flights at Parakou airport.</span></li>
+              <li><span class="lang-fr">Communication stratégique pour la vente des billets et le service client.</span><span class="lang-en">Strategic communication for ticket sales and customer service.</span></li>
+            </ul>
+            <div class="tag-row">
+              <span class="tl-tag"><span class="lang-fr">Aviation</span><span class="lang-en">Aviation</span></span>
+              <span class="tl-tag"><span class="lang-fr">Gestion opérationnelle</span><span class="lang-en">Operations</span></span>
+              <span class="tl-tag"><span class="lang-fr">Relations institutionnelles</span><span class="lang-en">Institutional relations</span></span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end timeline -->
+    </div><!-- end timeline-wrap -->
   </div>
 </section>
 
 <div class="thread-sep"></div>
 
-<!-- PERSONAL INFO CARDS -->
-<section id="personal">
+<!-- KEY HIGHLIGHTS -->
+<section id="highlights">
   <div class="section-inner">
     <div class="section-eyebrow reveal">
-      <span class="lang-fr">Informations personnelles</span>
-      <span class="lang-en">Personal details</span>
+      <span class="lang-fr">Chiffres clés</span>
+      <span class="lang-en">Key figures</span>
     </div>
     <h2 class="section-title reveal reveal-delay-1">
-      <span class="lang-fr">Profil <span class="gold-text">en chiffres</span></span>
-      <span class="lang-en">Profile <span class="gold-text">in numbers</span></span>
+      <span class="lang-fr">Un parcours en <span class="gold-text">chiffres</span></span>
+      <span class="lang-en">A career in <span class="gold-text">numbers</span></span>
     </h2>
-    <div class="personal-grid" style="margin-top:40px">
-      <div class="personal-card reveal">
-        <span class="pc-icon">🎓</span>
-        <div class="pc-label">PhD</div>
-        <div class="pc-value">UESTC – Chine</div>
-        <div class="pc-sub">Management Science &amp; Engineering · 2019</div>
+    <div class="highlights-grid" style="margin-top:44px">
+      <div class="hl-card reveal">
+        <span class="hl-icon">📅</span>
+        <div class="hl-num">15<sup style="font-size:.5em">+</sup></div>
+        <div class="hl-label"><span class="lang-fr">Années d'expériences professionnelles tous secteurs confondus</span><span class="lang-en">Years of professional experience across all sectors</span></div>
       </div>
-      <div class="personal-card reveal reveal-delay-1">
-        <span class="pc-icon">🏭</span>
-        <div class="pc-label">DGA</div>
-        <div class="pc-value">Compagnie Béninoise des Textiles</div>
-        <div class="pc-sub">Lokossa, Bénin · <span class="lang-fr">depuis 2023</span><span class="lang-en">since 2023</span></div>
+      <div class="hl-card reveal reveal-delay-1">
+        <span class="hl-icon">🌍</span>
+        <div class="hl-num">3</div>
+        <div class="hl-label"><span class="lang-fr">Pays d'exercice : Bénin, Chine, Etats-Unies  Turquie (missions)</span><span class="lang-en">Countries of practice: Benin, China, Turkey (missions)</span></div>
       </div>
-      <div class="personal-card reveal reveal-delay-2">
-        <span class="pc-icon">📚</span>
-        <div class="pc-label"><span class="lang-fr">Publications</span><span class="lang-en">Publications</span></div>
-        <div class="pc-value">4 <span class="lang-fr">Articles</span><span class="lang-en">Papers</span></div>
-        <div class="pc-sub">IEEE · <span class="lang-fr">Revues internationales</span><span class="lang-en">International journals</span></div>
-      </div>
-      <div class="personal-card reveal reveal-delay-3">
-        <span class="pc-icon">🌍</span>
-        <div class="pc-label"><span class="lang-fr">Langues</span><span class="lang-en">Languages</span></div>
-        <div class="pc-value">FR · EN · 中文</div>
-        <div class="pc-sub"><span class="lang-fr">Trilingue courant</span><span class="lang-en">Fluently trilingual</span></div>
+      <div class="hl-card reveal reveal-delay-2">
+        <span class="hl-icon">🏢</span>
+        <div class="hl-num">6</div>
+        <div class="hl-label"><span class="lang-fr">Organisations dirigées ou accompagnées</span><span class="lang-en">Organizations led or supported</span></div>
       </div>
     </div>
   </div>
@@ -649,77 +598,25 @@ footer{
 
 <div class="thread-sep"></div>
 
-<!-- INTERESTS -->
-<section id="interests">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">
-      <span class="lang-fr">Centres d'intérêt</span>
-      <span class="lang-en">Interests</span>
-    </div>
-    <h2 class="section-title reveal reveal-delay-1">
-      <span class="lang-fr">Au-delà du <span class="gold-text">bureau</span></span>
-      <span class="lang-en">Beyond the <span class="gold-text">office</span></span>
-    </h2>
-    <div class="interests-grid" style="margin-top:40px">
-      <div class="interest-card reveal">
-        <span class="int-icon">🔬</span>
-        <div class="int-title"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></div>
-        <p class="int-desc"><span class="lang-fr">Toujours en quête de nouvelles connaissances scientifiques et académiques pour contribuer au développement.</span><span class="lang-en">Always seeking new scientific and academic knowledge to contribute to development.</span></p>
+<!-- PAGE NAVIGATION -->
+<nav class="page-nav">
+  <div class="page-nav-inner">
+    <a href="apropos.html" class="page-nav-btn prev">
+      <span class="pnb-arrow">←</span>
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Page précédente</span><span class="lang-en">Previous page</span></div>
+        <div class="pnb-title"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></div>
       </div>
-      <div class="interest-card reveal reveal-delay-1">
-        <span class="int-icon">✈️</span>
-        <div class="int-title"><span class="lang-fr">Voyages</span><span class="lang-en">Travel</span></div>
-        <p class="int-desc"><span class="lang-fr">Passionné par la découverte de nouvelles cultures, ayant vécu et travaillé en Chine, aux Etats-Unies et en Afrique.</span><span class="lang-en">Passionate about discovering new cultures, having lived and worked in China and Africa.</span></p>
+    </a>
+    <a href="formation.html" class="page-nav-btn next">
+      <div>
+        <div class="pnb-dir"><span class="lang-fr">Page suivante</span><span class="lang-en">Next page</span></div>
+        <div class="pnb-title"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></div>
       </div>
-      <div class="interest-card reveal reveal-delay-2">
-        <span class="int-icon">⚽</span>
-        <div class="int-title">Sport</div>
-        <p class="int-desc"><span class="lang-fr">Le sport comme source d'énergie, de discipline et d'équilibre dans une vie professionnelle intense.</span><span class="lang-en">Sport as a source of energy, discipline and balance in an intense professional life.</span></p>
-      </div>
-      <div class="interest-card reveal reveal-delay-3">
-        <span class="int-icon">🌿</span>
-        <div class="int-title"><span class="lang-fr">Agriculture</span><span class="lang-en">Agriculture</span></div>
-        <p class="int-desc"><span class="lang-fr">Un intérêt profond pour l'agriculture durable, en lien avec ses travaux sur le développement des PME au Bénin.</span><span class="lang-en">A deep interest in sustainable agriculture, linked to his research on SME development in Benin.</span></p>
-      </div>
-    </div>
+      <span class="pnb-arrow">→</span>
+    </a>
   </div>
-</section>
-
-<div class="thread-sep"></div>
-
-<!-- REFERENCES -->
-<section id="references">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">
-      <span class="lang-fr">Références</span>
-      <span class="lang-en">References</span>
-    </div>
-    <h2 class="section-title reveal reveal-delay-1">
-      <span class="lang-fr">Personnes de <span class="gold-text">référence</span></span>
-      <span class="lang-en">Professional <span class="gold-text">references</span></span>
-    </h2>
-    <div class="ref-grid" style="margin-top:40px">
-      <div class="ref-card reveal">
-        <div class="ref-name">(à ajouter)</div>
-        <div class="ref-role"><span class="lang-fr">Conseil des Investisseurs Privés au Bénin</span><span class="lang-en">Council of Private Investors in Benin</span></div>
-        <div class="ref-contact">
-          <div class="ref-line">📧 <a href="mailto:dandjinoudan@yahoo.fr">dandjinoudan@yahoo.fr</a></div>
-          <div class="ref-line">📞 +229 01 97 89 20 46</div>
-        </div>
-      </div>
-      <div class="ref-card reveal reveal-delay-1">
-        <div class="ref-name">Prof. Shao Yun Fei</div>
-        <div class="ref-role"><span class="lang-fr">Professeur Chercheur Scientifique à l'UESTC</span><span class="lang-en">Scientific Research Professor at UESTC</span></div>
-        <div class="ref-contact">
-          <div class="ref-line">📧 <a href="mailto:shaoyf@uestc.edu.cn">shaoyf@uestc.edu.cn</a></div>
-          <div class="ref-line">📞 +86 130 7605 4800</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="thread-sep"></div>
+</nav>
 
 <!-- FOOTER -->
 <footer>
@@ -755,21 +652,27 @@ function setLang(lang){
 
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
-hamburger.addEventListener('click',()=>{
-  hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
-});
-document.querySelectorAll('.mobile-menu a').forEach(a=>{
-  a.addEventListener('click',()=>{
-    hamburger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-  });
-});
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
 
+// Reveal
 const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
 },{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Nav latérale active
+function scrollTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'})}
+window.addEventListener('scroll',()=>{
+  const items=document.querySelectorAll('.tl-nav-item');
+  const ids=['job1','job2','job3','job4','job5','job6'];
+  let active=0;
+  ids.forEach((id,i)=>{
+    const el=document.getElementById(id);
+    if(el&&el.getBoundingClientRect().top<window.innerHeight*0.55) active=i;
+  });
+  items.forEach((it,i)=>it.classList.toggle('active',i===active));
+});
 </script>
 </body>
 </html>
