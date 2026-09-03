@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr" data-lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Galerie – Dr. Judicael Paterne R. TOKOGNON</title>
-<meta name="description" content="Galerie photos de Dr. Judicael Paterne R. TOKOGNON – DGA, Professeur, Chercheur."/>
+<!-- SEO -->
+<title>Galerie Photos – Dr. Judicael Paterne R. TOKOGNON | Portraits Officiels</title>
+<meta name="description" content="Galerie photos officielle de Dr. Judicael Paterne R. TOKOGNON : portraits professionnels, conférences, visites industrielles et moments académiques. Cliquez pour agrandir."/>
+<link rel="canonical" href="https://paternejr-tok.com/galerie.html"/>
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://paternejr-tok.com/galerie.html"/>
+<meta property="og:title" content="Galerie Photos – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:description" content="Portraits et moments professionnels de Dr. TOKOGNON, DGA, Professeur, Chercheur."/>
+<meta property="og:image" content="https://paternejr-tok.com/c1.png"/>
+<meta property="og:image:alt" content="Portrait officiel du Dr. Judicael Paterne R. TOKOGNON"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:locale:alternate" content="en_US"/>
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:url" content="https://paternejr-tok.com/galerie.html"/>
+<meta name="twitter:title" content="Galerie Photos – Dr. Judicael Paterne R. TOKOGNON"/>
+<meta name="twitter:description" content="Portraits officiels et moments professionnels."/>
+<meta name="twitter:image" content="https://paternejr-tok.com/c1.png"/>
+<!-- Hreflang -->
+<link rel="alternate" hreflang="fr" href="https://paternejr-tok.com/galerie.html"/>
+<link rel="alternate" hreflang="en" href="https://paternejr-tok.com/galerie.html?lang=en"/>
+<link rel="alternate" hreflang="x-default" href="https://paternejr-tok.com/galerie.html"/>
+<!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+<!-- Thème -->
+<meta name="theme-color" content="#07111F"/>
+<!-- Préconnexions Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "url": "https://paternejr-tok.com/galerie.html",
+  "name": "Galerie Photos – Dr. Judicael Paterne R. TOKOGNON",
+  "inLanguage": "fr-FR",
+  "about": {
+    "@type": "Person",
+    "@id": "https://paternejr-tok.com/#person",
+    "name": "Dr. Judicael Paterne Raoul TOKOGNON"
+  },
+  "image": [
+    {
+      "@type": "ImageObject",
+      "url": "https://paternejr-tok.com/c1.png",
+      "caption": "Portrait officiel du Dr. Judicael Paterne R. TOKOGNON",
+      "description": "Portrait en costume du Dr. TOKOGNON, Directeur Général Adjoint de la CBT"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://paternejr-tok.com/e.jpeg",
+      "caption": "Dr. TOKOGNON lors d'un événement officiel",
+      "description": "Dr. TOKOGNON en réunion professionnelle"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://paternejr-tok.com/f.jpeg",
+      "caption": "Dr. TOKOGNON en conférence académique",
+      "description": "Dr. TOKOGNON présentant lors d'une conférence"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "https://paternejr-tok.com/g.jpeg",
+      "caption": "Dr. TOKOGNON à l'UESTC en Chine",
+      "description": "Dr. TOKOGNON sur le campus de l'UESTC à Chengdu, Chine"
+    }
+  ]
+}
+</script>
 <style>
 :root{
   --navy:#07111F;--navy-mid:#0D1E33;--navy-card:#152840;--navy-light:#1A2F4E;
@@ -258,7 +326,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <body>
 
 <!-- NAVBAR -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Navigation principale">
   <a href="index.html" class="nav-logo">
     <span class="initials">JPT</span>Dr. <span>TOKOGNON</span>
   </a>
@@ -271,19 +339,19 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
     <li><a href="galerie.html" class="active"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></a></li>
   </ul>
   <div class="nav-right">
-    <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    <div class="lang-switcher" role="group" aria-label="Changement de langue">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 EN</button>
     </div>
     <a href="contact.html" class="nav-cta">Contact</a>
   </div>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
   <div class="m-lang">
-    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="m-lang-btn active" id="m-btn-fr" onclick="setLang('fr')" aria-pressed="true">🇫🇷 Français</button>
+    <button class="m-lang-btn" id="m-btn-en" onclick="setLang('en')" aria-pressed="false">🇬🇧 English</button>
   </div>
   <a href="index.html"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
   <a href="apropos.html"><span class="lang-fr">À Propos</span><span class="lang-en">About</span></a>
@@ -310,7 +378,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </p>
     </div>
     <div class="banner-breadcrumb">
-      <a href="index.html" class="breadcrumb-link">Home</a>
+      <a href="index.html" class="breadcrumb-link"><span class="lang-fr">Accueil</span><span class="lang-en">Home</span></a>
       <span class="breadcrumb-sep">›</span>
       <span class="breadcrumb-current"><span class="lang-fr">Galerie</span><span class="lang-en">Gallery</span></span>
     </div>
@@ -335,8 +403,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
     <div class="gallery-grid">
 
       <!-- Photo 1 — c1.png (portrait principal) -->
-      <div class="gallery-item reveal" onclick="openLightbox(0)">
-        <img src="c1.png" alt="Dr. Judicael Paterne TOKOGNON — Portrait officiel"
+      <div class="gallery-item reveal" onclick="openLightbox(0)" role="button" tabindex="0" aria-label="Portrait officiel du Dr. Judicael Paterne R. TOKOGNON">
+        <img src="c1.png" alt="Portrait officiel du Dr. Judicael Paterne R. TOKOGNON, Directeur Général Adjoint de la CBT"
+             width="600" height="800"
+             loading="lazy" decoding="async"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
         <div class="gallery-placeholder" style="display:none">
           <span>👤</span><p><span class="lang-fr">Portrait principal</span><span class="lang-en">Main portrait</span></p>
@@ -349,8 +419,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </div>
 
       <!-- Photo 2 — e.jpeg -->
-      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(1)">
-        <img src="e.jpeg" alt="Dr. TOKOGNON"
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(1)" role="button" tabindex="0" aria-label="Dr. TOKOGNON lors d'un événement officiel">
+        <img src="e.jpeg" alt="Dr. Judicael Paterne TOKOGNON lors d'une réunion professionnelle à la CBT"
+             width="800" height="600"
+             loading="lazy" decoding="async"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
         <div class="gallery-placeholder" style="display:none">
           <span>📸</span><p>Photo E</p>
@@ -363,8 +435,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </div>
 
       <!-- Photo 3 — f.jpeg -->
-      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(2)">
-        <img src="f.jpeg" alt="Dr. TOKOGNON"
+      <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox(2)" role="button" tabindex="0" aria-label="Dr. TOKOGNON en conférence académique">
+        <img src="f.jpeg" alt="Dr. Judicael Paterne TOKOGNON présentant lors d'une conférence académique"
+             width="800" height="600"
+             loading="lazy" decoding="async"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
         <div class="gallery-placeholder" style="display:none">
           <span>📸</span><p>Photo F</p>
@@ -377,8 +451,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </div>
 
       <!-- Photo 4 — g.jpeg -->
-      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(3)">
-        <img src="g.jpeg" alt="Dr. TOKOGNON"
+      <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(3)" role="button" tabindex="0" aria-label="Dr. TOKOGNON sur le campus de l'UESTC en Chine">
+        <img src="g.jpeg" alt="Dr. Judicael Paterne TOKOGNON sur le campus de l'UESTC à Chengdu, Chine"
+             width="800" height="600"
+             loading="lazy" decoding="async"
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
         <div class="gallery-placeholder" style="display:none">
           <span>📸</span><p>Photo G</p>
@@ -391,7 +467,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </div>
 
       <!-- Placeholder 5 — photo à venir -->
-      <div class="gallery-item reveal reveal-delay-2" style="cursor:default">
+      <div class="gallery-item reveal reveal-delay-2" style="cursor:default" role="img" aria-label="Photo à venir">
         <div class="gallery-placeholder" style="display:flex;min-height:100%">
           <span style="font-size:28px;opacity:.4">＋</span>
           <p style="text-align:center;line-height:1.6;opacity:.5">
@@ -402,7 +478,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
       </div>
 
       <!-- Placeholder 6 — photo à venir -->
-      <div class="gallery-item reveal reveal-delay-3" style="cursor:default">
+      <div class="gallery-item reveal reveal-delay-3" style="cursor:default" role="img" aria-label="Photo à venir">
         <div class="gallery-placeholder" style="display:flex;min-height:100%">
           <span style="font-size:28px;opacity:.4">＋</span>
           <p style="text-align:center;line-height:1.6;opacity:.5">
@@ -417,10 +493,10 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 </section>
 
 <!-- LIGHTBOX -->
-<div id="lightbox">
-  <button class="lb-close" onclick="closeLightbox()">✕</button>
-  <button class="lb-arrow lb-prev" onclick="changeLightbox(-1)">‹</button>
-  <button class="lb-arrow lb-next" onclick="changeLightbox(1)">›</button>
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'images">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Fermer">✕</button>
+  <button class="lb-arrow lb-prev" onclick="changeLightbox(-1)" aria-label="Image précédente">‹</button>
+  <button class="lb-arrow lb-next" onclick="changeLightbox(1)" aria-label="Image suivante">›</button>
   <div class="lb-wrap">
     <div class="lb-img-wrap">
       <img id="lb-img" src="" alt=""/>
@@ -434,7 +510,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 <div class="thread-sep"></div>
 
 <!-- PAGE NAV -->
-<nav class="page-nav">
+<nav class="page-nav" aria-label="Navigation entre pages">
   <div class="page-nav-inner">
     <a href="expertise.html" class="page-nav-btn">
       <span class="pnb-arrow">←</span>
@@ -458,7 +534,7 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
   <div class="footer-inner">
     <a href="index.html" class="footer-logo">Dr. TOKOGNON</a>
     <p class="footer-copy">© 2026 Dr. Judicael Paterne R. TOKOGNON · <span class="lang-fr">Tous droits réservés</span><span class="lang-en">All rights reserved</span></p>
-    <nav class="footer-links">
+    <nav class="footer-links" aria-label="Liens de pied de page">
       <a href="apropos.html"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
       <a href="carriere.html"><span class="lang-fr">Parcours</span><span class="lang-en">Career</span></a>
       <a href="recherche.html"><span class="lang-fr">Recherche</span><span class="lang-en">Research</span></a>
@@ -479,18 +555,38 @@ footer{background:#060F1E;padding:40px 5% 32px;border-top:1px solid rgba(201,168
 function setLang(lang){
   document.documentElement.setAttribute('data-lang',lang);
   localStorage.setItem('toko_lang',lang);
-  document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('m-btn-fr').classList.toggle('active',lang==='fr');
-  document.getElementById('m-btn-en').classList.toggle('active',lang==='en');
+  const btnFr = document.getElementById('btn-fr');
+  const btnEn = document.getElementById('btn-en');
+  const mBtnFr = document.getElementById('m-btn-fr');
+  const mBtnEn = document.getElementById('m-btn-en');
+  if(btnFr) btnFr.classList.toggle('active', lang === 'fr');
+  if(btnEn) btnEn.classList.toggle('active', lang === 'en');
+  if(mBtnFr) mBtnFr.classList.toggle('active', lang === 'fr');
+  if(mBtnEn) mBtnEn.classList.toggle('active', lang === 'en');
+  if(btnFr) btnFr.setAttribute('aria-pressed', lang === 'fr');
+  if(btnEn) btnEn.setAttribute('aria-pressed', lang === 'en');
+  if(mBtnFr) mBtnFr.setAttribute('aria-pressed', lang === 'fr');
+  if(mBtnEn) mBtnEn.setAttribute('aria-pressed', lang === 'en');
+  // Mettre à jour les textes du lightbox si ouvert
+  if(document.getElementById('lightbox').classList.contains('open')) renderLightbox();
 }
 (function(){const s=localStorage.getItem('toko_lang');if(s&&s!=='fr')setLang(s);})();
 
 // ── HAMBURGER ──
 const hamburger=document.getElementById('hamburger');
 const mobileMenu=document.getElementById('mobileMenu');
-hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileMenu.classList.toggle('open')});
-document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('open');mobileMenu.classList.remove('open')}));
+hamburger.addEventListener('click',()=>{
+  const isOpen = hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
+});
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.addEventListener('click',()=>{
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+}));
 
 // ── REVEAL ──
 const obs=new IntersectionObserver(entries=>{
@@ -535,7 +631,8 @@ function renderLightbox(){
   img.alt=l==='fr'?p.capFr:p.capEn;
   img.onerror=function(){
     this.style.display='none';
-    document.querySelector('.lb-placeholder')&&(document.querySelector('.lb-placeholder').style.display='flex');
+    const ph=document.querySelector('.lb-placeholder');
+    if(ph) ph.style.display='flex';
   };
   img.onload=function(){this.style.display='block'};
   document.getElementById('lb-caption').textContent=l==='fr'?p.capFr:p.capEn;
